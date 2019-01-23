@@ -15,9 +15,9 @@ a {
 
 .Intro {
   background: black;
-  height: 900px;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 .IntroGroup {
@@ -27,16 +27,19 @@ a {
 }
 
 .Intro h1{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display';
   margin: 0;
   color: white;
   line-height: normal;
+  font-weight: bold;
   font-size: 80px;
-  max-width: 400px;
+  max-width: 440px;
 }
 
 .Intro p{
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, .7);
+  line-height: 1.5;
+  max-width: 540px;
 }
 
 /* .Hero a{
