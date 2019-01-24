@@ -1,0 +1,11 @@
+.Header {
+    position: absolute;
+    width: 100%;
+    padding: 72px 108px;
+    z-index: 100;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: white;
+    
+}

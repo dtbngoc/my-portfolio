@@ -1,0 +1,112 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
+}
+
+a {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-decoration: none;
+}
+
+.Landing {
+  background:#0F121C;
+  background-size: cover;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  
+  &::before {
+      content: "";
+      
+      z-index: 100;
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+      width: 100%;
+      height: 100%;
+      
+      background: url('../images/noise.png');
+      // background: url('https://anatacreative.com/codepen/noise.png');
+      
+      // animation: 1s infinite noise;
+      
+      pointer-events: none;
+  }
+}
+
+.Intro {
+  margin: 0;
+  padding: 246px 108px;
+  text-align: left;
+}
+
+.Intro h1{
+  font-family: 'Playfair Display';
+  margin: 0;
+  color: white;
+  line-height: normal;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.Intro p{
+  color: rgba(255, 255, 255, .7);
+  line-height: 1.5;
+  max-width: 540px;
+}
+
+
+.VinylPlayer {
+  margin: 0;
+  padding: 200px 108px;
+}
+
+
+// @keyframes noise {
+//   0%, 100% {
+//       background-position: 0 0;
+//   }
+
+//   10% {
+//       background-position: -5% -10%;
+//   }
+
+//   20% {
+//       background-position: -15% 5%;
+//   }
+
+//   30% {
+//       background-position: 7% -25%;
+//   }
+
+//   40% {
+//       background-position: 20% 25%;
+//   }
+
+//   50% {
+//       background-position: -25% 10%;
+//   }
+
+//   60% {
+//       background-position: 15% 5%;
+//   }
+
+//   70% {
+//       background-position: 0% 15%;
+//   }
+
+//   80% {
+//       background-position: 25% 35%;
+//   }
+
+//   90% {
+//       background-position: -10% 10%;
+//   }
+// }

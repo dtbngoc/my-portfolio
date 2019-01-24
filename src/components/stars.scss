@@ -1,0 +1,35 @@
+body {
+  background: black;
+  margin: 0;
+  height: 100vh;
+}
+
+
+.star {
+  filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.2));
+  position: absolute;
+  z-index: 100;
+  opacity: 0.3;
+  animation-name: twinkle;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes twinkle {
+  5% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  68% {
+    opacity: 0.3;
+  }
+  74% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 0.3;
+  }
+}
+
