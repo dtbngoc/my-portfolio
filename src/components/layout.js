@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 
-import Header from './header'
+
 import './layout.scss'
 import './stars.scss'
 
@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header />
+        
         {children}
       </>
     )}

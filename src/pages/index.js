@@ -3,11 +3,20 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import Image from '../components/image'
-import Header from '../components/header';
+
 
 
 const IndexPage = () => (
+  
   <Layout>
+    <header>
+      Ngoc Dang
+    </header>
+
+    <nav>
+      About
+    </nav>
+    
     <div className="Landing">
       <div className="Intro">
         <h1>I create <br />products <br />not just art</h1>
@@ -33,7 +42,10 @@ const IndexPage = () => (
             </g>
         </svg>
       </div>
+
+    
     </div>
+    
   </Layout>
 )
 
