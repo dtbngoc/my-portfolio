@@ -4,32 +4,246 @@ body {
   height: 100vh;
 }
 
+// .star {
+//   position: absolute;
+//   background-color: white;
+//   height: 2px;
+//   width: 2px;
+//   border-radius: 50%;
+//   box-shadow: 0 0 10px 2px rgba(0, 68, 255, 0.5);
+//   animation-name: twinkle-1;
+//   animation-iteration-count: infinite;
+// }
 
-.star {
-  filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.2));
-  position: absolute;
-  z-index: 100;
-  opacity: 0.3;
-  animation-name: twinkle;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
+@keyframes twinkle-1 {
+  20% {
+    transform: scale(0.4);
+    opacity: 0.5;
+  }
 }
 
 @keyframes twinkle {
   5% {
-    opacity: 1;
+    transform: scale(0.4);
+    opacity: 0.5;
   }
   15% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   68% {
+    transform: scale(0.8);
     opacity: 0.3;
   }
   74% {
     opacity: 1;
   }
   78% {
+    transform: scale(0.4);
     opacity: 0.3;
   }
 }
+
+@keyframes twinkle-2 {
+  40% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+@keyframes twinkle-3 {
+  60% {
+    transform: scale(0.6);
+    opacity: 0.5;
+  }
+}
+@keyframes twinkle-4 {
+  80% {
+    transform: scale(0.3);
+    opacity: 0.5;
+  }
+}
+
+// #star-1 {
+//   top: 15%; 
+//   left: 60%;
+//   animation-name: twinkle-1;
+//   animation-duration: 2s;
+// }
+// #star-2 {
+//   top: 5%;
+//   left: 25%;
+//   animation-name: twinkle-2;
+//   animation-duration: 1.9s;
+// }
+// #star-3 {
+//   top: 8%; 
+//   left: 85%;
+//   animation-name: twinkle-3;
+//   animation-duration: 2.1s;
+// }
+// #star-4 {
+//   top: 19%; 
+//   left: 70%;
+//   animation-name: twinkle-4;
+//   animation-duration: 2s;
+// }
+// #star-5 {
+//   top: 13%; 
+//   left: 29%;
+//   animation-name: twinkle-1;
+//   animation-duration: 1.9s;
+// }
+// #star-6 {
+//   top: 19%; 
+//   left: 56%;
+//   animation-name: twinkle-1;
+//   animation-duration: 2.1s;
+// }
+// #star-7 {
+//   top: -5%;
+//   left: 46%;
+//   animation-name: twinkle-2;
+//   animation-duration: 2s;
+// }
+// #star-8 {
+//   top: 13%; 
+//   left: 16%;
+//   animation-name: twinkle-3;
+//   animation-duration: 1.9s;
+// }
+// #star-9 {
+//   top: 9%; 
+//   left: 90%;
+//   animation-name: twinkle-4;
+//   animation-duration: 2.1s;
+// }
+// #star-10 {
+//   top: -13%; 
+//   left: 34%;
+//   animation-name: twinkle-1;
+//   animation-duration: 2.2s;
+// }
+// #star-11 {
+//   top: 30%; 
+//   left: 64%;
+//   animation-name: twinkle-1;
+//   animation-duration: 1.9s;
+// }
+// #star-12 {
+//   top: -15%;
+//   left: 76%;
+//   animation-name: twinkle-2;
+//   animation-duration: 2.1s;
+// }
+// #star-13 {
+//   top: 30%; 
+//   left: 8%;
+//   animation-name: twinkle-3;
+//   animation-duration: 2s;
+// }
+// #star-14 {
+//   top: 16%; 
+//   left: 80%;
+//   animation-name: twinkle-4;
+//   animation-duration: 1.9s;
+// }
+// #star-15 {
+//   top: -7%; 
+//   left: 40%;
+//   animation-name: twinkle-1;
+//   animation-duration: 2.1s;
+// }
+// #star-16 {
+//   top: 7%; 
+//   left: 35%;
+//   animation-name: twinkle-4;
+//   animation-duration: 2.1s;
+// }
+// #star-17 {
+//   top: 55%;
+//   left: 71%;
+//   animation-name: twinkle-2;
+//   animation-duration: 2.1s;
+// }
+// #star-18 {
+//   top: 40%; 
+//   left: 18%;
+//   animation-name: twinkle-3;
+//   animation-duration: 2.2s;
+// }
+// #star-19 {
+//   top: 46%; 
+//   left: 86%;
+//   animation-name: twinkle-4;
+//   animation-duration: 1.9s;
+// }
+// #star-20 {
+//   top: 57%; 
+//   left: 47%;
+//   animation-name: twinkle-1;
+//   animation-duration: 2.1s;
+// }
+// #star-21 {
+//   top: 41%; 
+//   left: 30%;
+//   animation-name: twinkle-4;
+//   animation-duration: 2.1s;
+// }
+// #star-22 {
+//   top: 35%;
+//   left: 76%;
+//   animation-name: twinkle-2;
+//   animation-duration: 2.1s;
+// }
+// #star-23 {
+//   top: 45%; 
+//   left: 5%;
+//   animation-name: twinkle-3;
+//   animation-duration: 2s;
+// }
+// #star-24 {
+//   top: 24%; 
+//   left: 90%;
+//   animation-name: twinkle-4;
+//   animation-duration: 2.2s;
+// }
+// #star-25 {
+//   top: 34%; 
+//   left: 42%;
+//   animation-name: twinkle-2;
+//   animation-duration: 2s;
+// }
+// #star-26 {
+//   top: 12%; 
+//   left: 31%;
+//   animation-name: twinkle-4;
+//   animation-duration: 0.9s;
+// }
+
+
+$star-count : 200;
+
+.star{
+  position: absolute;
+  background-color: white;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px 2px rgba(0, 68, 255, 0.5);
+  z-index: -1;
+  
+  animation-name: twinkle;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  
+  @for $i from 1 to $star-count+1 {     
+    $delay: random(20);
+    
+    &:nth-of-type(#{$i}){
+      animation-delay: -#{$delay}s;
+      top: percentage(random(100) / 100);
+      left: percentage(random(100) / 100);
+    }
+  }
+}
+
 

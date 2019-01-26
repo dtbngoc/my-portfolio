@@ -7,6 +7,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.scss'
 import './stars.scss'
+import '../css/styles.scss'
 
 
 const Layout = ({ children }) => (

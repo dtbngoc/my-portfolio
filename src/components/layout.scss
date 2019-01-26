@@ -40,12 +40,13 @@ a {
 }
 
 .Landing {
+  position: relative;
   background:#0F121C;
   background-size: cover;
   height: 100vh;
 
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: 1fr 1fr;
   
   &::before {
       content: "";
@@ -85,14 +86,44 @@ a {
 .Intro p{
   color: rgba(255, 255, 255, .6);
   line-height: 1.5;
-  max-width: 540px;
 }
 
 
-.VinylPlayer {
-  margin: 0;
-  padding: 200px 108px;
+.VinylPlayer{
+  position: absolute;
+  top: 200px;
+  right: 568px;
 }
+
+.VinylPlayerGroup {
+  position: relative;
+}
+
+.VinylPlayerGroup svg{
+  width: 448px;
+  height: 667px;
+  position: absolute;
+  
+}
+
+.star-container-top {
+  position: absolute;
+  //background-color: white;
+  height: 400px;
+  width: 300px;
+  clip-path: url(#clip0);
+}
+
+.star-container-bottom {
+  position: absolute;
+  top: 379px;
+  left: 47px;
+  //background-color: white;
+  height: 128px;
+  width: 359px;
+  clip-path: ellipse();
+}
+
 
 
 // @keyframes noise {
