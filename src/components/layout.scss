@@ -1,12 +1,18 @@
+//$background-color: #16143A;
+$background-color: #06070B;
+//$background-color: #0F121C;
+$text-color: #ECEDFB;
+
 header {
   position: absolute;
-  padding: 72px 108px;
+  top: 72px;
+  left: 160px;
   z-index: 100;
 
   font-family: "Overpass Mono";
   font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: $text-color;
   
 }
 
@@ -19,7 +25,7 @@ nav {
   font-family: "Playfair Display";
   font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: $text-color;
   transform: rotate(-90deg);
   
 }
@@ -30,18 +36,19 @@ body {
   font-size: 20px;
   font-weight: 200;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.3;
+  color: rgba($text-color, .8);
+  line-height: 1.5;
 }
 
-a {
-  font-family: 'Playfair Display', serif;
-  color: white;
-  text-decoration: none;
-}
+// a {
+//   font-family: 'Playfair Display', serif;
+//   color: $text-color;
+//   text-decoration: none;
+// }
 
 .Landing {
   position: relative;
-  background:#0F121C;
+  background: $background-color;
   background-size: cover;
   height: 100vh;
 
@@ -59,49 +66,49 @@ a {
       width: 100%;
       height: 100%;
       
-      background: url('../images/noise.png');
+      // background: url('../images/img-noise-128.png');
+      background: url('../images/100-80-4.png');
       // background: url('https://anatacreative.com/codepen/noise.png');
       
-      // animation: 1s infinite noise;
+      animation: 1s infinite noise;
       
       pointer-events: none;
   }
 }
 
 .Intro {
+  position: absolute;
   margin: 0;
-  padding: 246px 108px;
+  top: 280px;
+  left: 160px;
   text-align: left;
 }
 
 .Intro h1{
   font-family: 'Playfair Display';
   margin: 0;
-  color: white;
+  color: $text-color;
   line-height: normal;
   font-weight: bold;
   font-size: 80px;
 }
 
-.Intro p{
-  color: rgba(255, 255, 255, .6);
-  line-height: 1.5;
-}
 
-
-.VinylPlayer{
+.Gramophone{
   position: absolute;
-  top: 200px;
-  right: 568px;
+  top: 160px;
+  right: 640px;
 }
 
-.VinylPlayerGroup {
+.GramophoneGroup {
   position: relative;
 }
 
-.VinylPlayerGroup svg{
-  width: 448px;
-  height: 667px;
+.GramophoneGroup svg{
+  // width: 448px;
+  // height: 667px;
+  width: 480px;
+  height: 716px;
   position: absolute;
   
 }
@@ -116,55 +123,55 @@ a {
 
 .star-container-bottom {
   position: absolute;
-  top: 379px;
-  left: 47px;
+  top: 411px;
+  left: 59px;
   //background-color: white;
-  height: 128px;
-  width: 359px;
+  height: 97px;
+  width: 369px;
   clip-path: ellipse();
 }
 
 
 
-// @keyframes noise {
-//   0%, 100% {
-//       background-position: 0 0;
-//   }
+@keyframes noise {
+  0%, 100% {
+      background-position: 0 0;
+  }
 
-//   10% {
-//       background-position: -5% -10%;
-//   }
+  10% {
+      background-position: -5% -10%;
+  }
 
-//   20% {
-//       background-position: -15% 5%;
-//   }
+  20% {
+      background-position: -15% 5%;
+  }
 
-//   30% {
-//       background-position: 7% -25%;
-//   }
+  30% {
+      background-position: 7% -25%;
+  }
 
-//   40% {
-//       background-position: 20% 25%;
-//   }
+  40% {
+      background-position: 20% 25%;
+  }
 
-//   50% {
-//       background-position: -25% 10%;
-//   }
+  50% {
+      background-position: -25% 10%;
+  }
 
-//   60% {
-//       background-position: 15% 5%;
-//   }
+  60% {
+      background-position: 15% 5%;
+  }
 
-//   70% {
-//       background-position: 0% 15%;
-//   }
+  70% {
+      background-position: 0% 15%;
+  }
 
-//   80% {
-//       background-position: 25% 35%;
-//   }
+  80% {
+      background-position: 25% 35%;
+  }
 
-//   90% {
-//       background-position: -10% 10%;
-//   }
-// }
+  90% {
+      background-position: -10% 10%;
+  }
+}
 

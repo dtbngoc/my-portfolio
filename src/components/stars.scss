@@ -220,7 +220,7 @@ body {
 // }
 
 
-$star-count : 200;
+$star-count : 500;
 
 .star{
   position: absolute;
@@ -240,8 +240,8 @@ $star-count : 200;
     
     &:nth-of-type(#{$i}){
       animation-delay: -#{$delay}s;
-      top: percentage(random(100) / 100);
-      left: percentage(random(100) / 100);
+      top: percentage(random(1000) / 1000);
+      left: percentage(random(1000) / 1000);
     }
   }
 }
