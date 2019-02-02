@@ -29,8 +29,8 @@
 }
 
 
-.view-3D #solar-system      { transform: rotateX(75deg) ; }
+.view-3D #solar-system      { transform: rotateX(65deg) ; }
 .view-3D #sun               { transform: rotateX(-90deg); }
 
 .view-3D .planet, 
-.view-3D .moon              { transform: rotateX(0deg); }
+.view-3D .moon              { transform: rotateX(0deg)}

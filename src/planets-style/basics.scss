@@ -1,10 +1,3 @@
-.SolarSystem {
-  transform: scale(0.44);
-  position: absolute;
-  top: 459px;
-  left: 243px;
-}
-
 #solar-system {
   position: absolute;
   width: 100%;
@@ -17,8 +10,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 1.2px solid white;
+  border: 1px solid #596a99;
   border-radius: 50%;
+  //transform: translate3D(-1px, -1px, 0);
   transform-style: preserve-3d;
   animation-name: orbit;
   animation-iteration-count: infinite;

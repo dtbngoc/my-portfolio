@@ -1,5 +1,5 @@
 import React from 'react'
-import './stars.scss'
+import './Stars.scss'
 
 const Stars = props => (
     <div className='Stars'>
@@ -404,106 +404,7 @@ const Stars = props => (
         <div className='star' />
         <div className='star' />
         <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
-        <div className='star' />
+
     </div>
 )
 

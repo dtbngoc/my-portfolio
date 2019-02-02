@@ -1,0 +1,30 @@
+import React, { Component } from 'react'
+import './SwapLink.scss'
+
+class SwapLink extends Component {
+  splitText() {
+    return this.props.text.split('');
+  }
+
+  renderPart(text, index) {
+    // replace spaces
+    text = text.replace(/ /g, '\u00A0');
+    return <span id='${index}'>{text}</span>;
+  }
+
+  render() {
+    return (
+      <div className='Link'>
+        { this.splitText().map((text, i) => this.renderPart(text, i))}
+      </div>
+    );
+  }
+
+  
+
+      
+
+   
+}
+
+export default SwapLink

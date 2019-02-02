@@ -1,13 +1,13 @@
-//$background-color: #16143A;
-$background-color: #06070B;
-//$background-color: #0F121C;
+$background-color: #111421;
 $text-color: #ECEDFB;
+$text-color-1: #6c80b6;
 
-header {
+@import "gram-img";
+
+.Header {
   position: absolute;
   top: 72px;
   left: 160px;
-  z-index: 100;
 
   font-family: "Overpass Mono";
   font-size: 16px;
@@ -15,20 +15,16 @@ header {
   color: $text-color;
   
 }
-
-nav {
-  position: fixed;
-  top: 80px;
-  right: 96px;
+.Navigation {
+  position: absolute;
+  top: 124px;
+  right: 160px;
   z-index: 100;
-  
-  font-family: "Playfair Display";
-  font-size: 16px;
-  font-weight: 700;
-  color: $text-color;
+ 
   transform: rotate(-90deg);
-  
 }
+
+
 
 body {
   font-family: 'Overpass Mono', sans-serif;
@@ -38,27 +34,30 @@ body {
   -webkit-font-smoothing: antialiased;
   color: rgba($text-color, .8);
   line-height: 1.5;
+  background: $background-color;
 }
 
-// a {
-//   font-family: 'Playfair Display', serif;
-//   color: $text-color;
-//   text-decoration: none;
-// }
+h1{
+  font-family: 'Playfair Display';
+  //font-family: 'Overpass Mono';
+  margin: 0;
+  color: $text-color;
+  line-height: normal;
+  font-weight: bold;
+  font-size: 80px;
+}
 
-.Landing {
+#noise-background {
   position: relative;
-  background: $background-color;
-  background-size: cover;
-  height: 100vh;
+  //background-size: cover;
+  //height: 100vh;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  
   
   &::before {
       content: "";
       
-      z-index: 100;
+      //z-index: 100;
       position: absolute;
       top: 0;
       left: 0;
@@ -66,14 +65,19 @@ body {
       width: 100%;
       height: 100%;
       
-      // background: url('../images/img-noise-128.png');
+      //background: url('../images/img-noise-128.png');
       background: url('../images/100-80-4.png');
-      // background: url('https://anatacreative.com/codepen/noise.png');
       
-      animation: 1s infinite noise;
+      //animation: 1s infinite noise;
       
       pointer-events: none;
   }
+}
+
+.Landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
 }
 
 .Intro {
@@ -84,20 +88,17 @@ body {
   text-align: left;
 }
 
-.Intro h1{
-  font-family: 'Playfair Display';
-  margin: 0;
-  color: $text-color;
-  line-height: normal;
-  font-weight: bold;
-  font-size: 80px;
-}
+
 
 
 .Gramophone{
   position: absolute;
-  top: 160px;
-  right: 640px;
+  top: 16%;
+  //top: 160px;
+  right: 680px;
+  //animation: 3s infinite gramophone-pulse;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 .GramophoneGroup {
@@ -115,6 +116,8 @@ body {
 
 .star-container-top {
   position: absolute;
+  top: 2px;
+  left: 2px;
   //background-color: white;
   height: 400px;
   width: 300px;
@@ -123,14 +126,54 @@ body {
 
 .star-container-bottom {
   position: absolute;
-  top: 411px;
-  left: 59px;
+  top: 405px;
+  left: 105px;
   //background-color: white;
-  height: 97px;
-  width: 369px;
+  height: 124px;
+  width: 286px;
   clip-path: ellipse();
 }
 
+#gramophone-img {
+  position: absolute;
+  width: 480px;
+  height: 730px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#shadow {
+  position: absolute;
+  top: 560px;
+  left: 20px;
+  width: 480px;
+  height: 285px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.PlanetsGroup {
+  transform: scale(0.38);
+  position: absolute;
+  top: 467px;
+  left: 249px;
+}
+
+.CaseStudies {
+  height: 100vh;
+}
+
+
+
+@keyframes gramophone-pulse {
+  0% {
+    top: 16%;
+  }
+  100% {
+    top: 18%;
+  }
+}
 
 
 @keyframes noise {
@@ -174,4 +217,17 @@ body {
       background-position: -10% 10%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 

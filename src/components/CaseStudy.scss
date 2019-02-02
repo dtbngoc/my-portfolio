@@ -1,0 +1,132 @@
+.CaseStudy {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1016px;
+    height: 600px;
+    overflow: hidden;
+    
+    //transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+
+    
+}
+
+.title-container {
+    position: absolute;
+    display: grid;
+    grid-template-rows: 120px auto;
+}
+
+.img-container {
+    position: absolute;
+    width: 480px;
+    height: 320px;
+    background-color: black;
+    justify-self: center;
+    align-self: center;
+    
+    border-radius: 16px;
+    //box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+
+   
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.image-container:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.CaseStudy h1 {
+    width: 480px;
+    align-self: top;
+    vertical-align: top;
+    
+}
+
+.CaseStudy h4 {
+    align-self: end;
+    margin-bottom: 0;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+// // html {
+// //   height: 100%;
+// // }
+// // body {
+// //   height: auto;
+// //   background-color: #FDD95F;
+// //   font-family: "Lato", sans-serif;
+// //   text-align: center;
+// // }
+// .wrapper {
+//   position: relative;
+//   margin: auto;
+//   transform-style: preserve-3d;
+//   perspective: 800px;
+//   height: 60vh;
+//   width: 70vh;
+//   .content {
+//     height: 60vh;
+//     box-shadow: 0 6px 56px 26px rgba(0, 0, 0, 0.1);
+//     width: 70vh;
+//     background: url(https://source.unsplash.com/random);
+//     background-size: cover;
+//     background-position: center;
+//     transform: rotateX(0) rotateY(0);
+//     pointer-events: none;
+//     transition: 250ms linear transform;
+//     overflow: hidden;
+//   }
+//   .cell {
+//     position: absolute;
+//     z-index: 1;
+//     width: 50%;
+//     height: 50%;
+    
+//     &-1 {
+//       top: 0;
+//       left: 0;
+
+//       &:hover ~ .content {
+//         transform: rotateX(5deg) rotateY(-5deg);
+//       }
+//     }
+//     &-2 {
+//       top: 0;
+//       left: 50%;
+//       z-index: 3;
+
+//       &:hover ~ .content {
+//         transform: rotateX(5deg) rotateY(5deg);
+//       }
+//     }
+
+//     &-3 {
+//       top: 50%;
+//       left: 0%;
+//       z-index: 3;
+
+//       &:hover ~ .content {
+//         transform: rotateX(-5deg) rotateY(-5deg);
+//       }
+//     }
+//     &-4 {
+//       top: 50%;
+//       left: 50%;
+//       z-index: 3;
+
+//       &:hover ~ .content {
+//         transform: rotateX(-5deg) rotateY(5deg);
+//       }
+//     }
+//   }
+// }
