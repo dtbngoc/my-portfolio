@@ -33,14 +33,14 @@
 
 //planets' size 
 #sun                      { transform: scale(1) }
-#mercury .planet          { transform: scale(0.15) }
-#venus .planet            { transform: scale(0.2) }
-#earth .planet            { transform: scale(0.25) }
-#earth .moon              { transform: scale(0.08) }
-#mars .planet             { transform: scale(0.16) }
-#jupiter .planet          { transform: scale(0.48) }
-#saturn .planet           { transform: scale(0.4) }
-#uranus .planet           { transform: scale(0.2) }
+#mercury .planet          { transform: scale(0.13, 0.139) }
+#venus .planet            { transform: scale(0.18, 0.193) }
+#earth .planet            { transform: scale(0.22, 0.236) }
+#earth .moon              { transform: scale(0.08, 0.086) }
+#mars .planet             { transform: scale(0.26, 0.279) }
+#jupiter .planet          { transform: scale(0.4, 0.43) }
+#saturn .planet           { transform: scale(0.2, 0.215) }
+//#uranus .planet           { transform: scale(0.2) }
 
 
 //orbit rings' size 
@@ -58,4 +58,4 @@
 #mars.orbit               { @include orbitSize(440px) }
 #jupiter.orbit            { @include orbitSize(560px) }
 #saturn.orbit             { @include orbitSize(696px) }
-#uranus.orbit             { @include orbitSize(840px) }
+//#uranus.orbit             { @include orbitSize(840px) }

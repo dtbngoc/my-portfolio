@@ -1,8 +1,32 @@
 import React, { Component } from 'react'
 import { findDOMNode } from 'react-dom'
+import styled from 'styled-components'
 
 
-class TiltPhaseSix extends Component {
+const Wrapper = styled.section`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 520px;
+  width: 880px;
+  background: #F0F1FF;
+  border-radius: 8px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+`;
+
+
+const Picture = styled.img`
+    src: url(${props => props.src});
+    margin-left: 90px;
+    height: 400px;
+    //-webkit-filter: grayscale(100%);
+    //filter: grayscale(100%);
+    //filter: hue-rotate(160deg);
+`
+
+
+
+class TiltImage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -10,10 +34,10 @@ class TiltPhaseSix extends Component {
     }
     const defaultSettings = {
       reverse: false,
-      max: 4,
+      max: 3,
       perspective: 1000,
       easing: 'cubic-bezier(.03,.98,.52,.99)',
-      scale: '1.01',
+      scale: '1.02',
       speed: '1000',
       transition: true,
       axis: null,
@@ -130,14 +154,42 @@ class TiltPhaseSix extends Component {
     }
     return (
       <div
+        
         style={style}
+    
         onMouseEnter={this.handleMouseEnter}
         onMouseMove={this.handleMouseMove}
         onMouseLeave={this.handleMouseLeave}
       >
-        {this.props.children}
+        
+        {/* <img src={this.props.image} alt="" height='480px' /> */}
+        <Wrapper id='noise-background'>
+          <div
+          
+            style={style}
+        
+            onMouseEnter={this.handleMouseEnter}
+            onMouseMove={this.handleMouseMove}
+            onMouseLeave={this.handleMouseLeave}
+          >
+          {/* <img src={this.props.image} alt="" height='400px' />  */}
+          <Picture src={this.props.image} />
+
+          </div>
+        </Wrapper>
+
       </div>
+
+      
+
+
+
+
+
+
+
+
     )
   }
 }
-export default TiltPhaseSix
+export default TiltImage

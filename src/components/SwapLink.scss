@@ -1,18 +1,36 @@
 $text-color: #ECEDFB;
 
 .link-container{
-    position:absolute;
-    text-align:center;
+    position: absolute;
+    text-align: center;
     
-    overflow:hidden;
-    text-align:left;
-    height:20px;
+    overflow: hidden;
+    text-align: left;
+    height: 20px;
     width: 100px;
 }
-.Link{
+
+
+  
+.link-container:hover {
+    cursor: pointer;
+}
+
+#on-black.Link{
     position: relative;
     font-family: 'Playfair Display', sans-serif;
     color: $text-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height:20px;
+    height:20px;
+    
+}
+
+#on-white.Link{
+    position: relative;
+    font-family: 'Playfair Display', sans-serif;
+    color: #111421;
     font-size: 16px;
     font-weight: 700;
     line-height:20px;

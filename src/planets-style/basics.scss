@@ -7,6 +7,7 @@
 }
 
 .orbit {
+  //box-shadow: 0 0 100px rgba(209, 212, 255, 0.1);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,23 +51,21 @@
   transform-style: preserve-3d;
 }
 
-#sun.no-clipping {
+#sun {
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 0 48px rgba(255, 160, 60, 0.5);
+  box-shadow: 0 0 48px rgba(209, 212, 255, 0.8);
 }
 
-#sun.sun-clipping {
-  background-repeat: no-repeat;
-  background-size: cover;
-  clip-path: ellipse(128% 69% at 50% 0%);
-}
+
 
 .planet {
   background-repeat: no-repeat;
   background-size: cover;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  box-shadow: 0 0 32px rgba(209, 212, 255, 0.8);
+  
 }
 
 
