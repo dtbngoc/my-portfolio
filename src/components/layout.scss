@@ -94,16 +94,16 @@ h1{
 
 .Gramophone{
   position: absolute;
-  top: 16%;
-  right: 10%;
-  background-color: #0C0E19;
+  top: 15%;
+  right: 8%;
+  //background-color: #0C0E19;
   width: 560px;
   height: 720px;
 }
 
 .GramophoneGroup {
   position: relative;
-  
+  //transform: scale(0.8);
 }
 
 .GramophoneGroup svg{
@@ -139,13 +139,13 @@ h1{
   position: absolute;
   width: 480px;
   height: 730px;
-  background-repeat: no-repeat;
+  //background-repeat: no-repeat;
   background-size: cover;
 }
 
 #shadow {
   position: absolute;
-  top: 560px;
+  top: 550px;
   left: 20px;
   width: 480px;
   height: 285px;
@@ -162,8 +162,15 @@ h1{
 }
 
 .casestudy-container {
-  background-color: #f5f6fa;
+  background-color: $background-color;
+//  background-color: #EFF1FA;
   display: flex;
+  flex-direction: row;
+
+  margin-left: 16%;
+
+  // display: grid;
+  // grid-row-gap: 50px;
   align-items: center;
   height: 100vh;
 }

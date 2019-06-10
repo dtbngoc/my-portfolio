@@ -5,7 +5,8 @@ import Layout from '../components/layout'
 
 import Stars from '../components/Stars';
 import Planets from '../components/Planets';
-import CaseStudy from '../components/CaseStudy';
+
+import TiltImage from '../components/TiltImage';
 
 import ReactFullpage from '@fullpage/react-fullpage';
 
@@ -85,14 +86,18 @@ const IndexPage = () => (
             </MySection>
             <MySection>
               <section id='noise-background' className='casestudy-container'>
-                <CaseStudy 
-                  image={require('../images/Header.png')}
+                {/* <CaseStudy 
+                  image={require('../images/iofit_header.jpg')}
                   text='Case study I:' >
 
-                  Take me <br />
-                  to the moon
+                  
 
-                </CaseStudy>
+                </CaseStudy> */}
+                 <TiltImage image={require('../images/iofit_header.jpg')} />
+                
+                  
+                  <h1>iofit</h1>
+                
                 
               </section>
             </MySection>

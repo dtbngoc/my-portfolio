@@ -7,18 +7,18 @@ const Wrapper = styled.section`
   position: absolute;
   display: flex;
   align-items: center;
-  height: 520px;
-  width: 880px;
+  height: 720px;
+  width: 560px;
   background: #F0F1FF;
   border-radius: 8px;
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: -16px 8px 40px rgba(115, 122, 143, 0.12);
 `;
 
 
 const Picture = styled.img`
     src: url(${props => props.src});
-    margin-left: 90px;
-    height: 400px;
+    //margin-left: 90px;
+    width: 564px;
     //-webkit-filter: grayscale(100%);
     //filter: grayscale(100%);
     //filter: hue-rotate(160deg);
@@ -37,7 +37,7 @@ class TiltImage extends Component {
       max: 3,
       perspective: 1000,
       easing: 'cubic-bezier(.03,.98,.52,.99)',
-      scale: '1.02',
+      scale: '1',
       speed: '1000',
       transition: true,
       axis: null,
