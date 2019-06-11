@@ -1,29 +1,24 @@
 import React from 'react'
 import "../components/layout.scss"
-
 //import Layout from '../components/layout'
 
+import Nav from '../components/Nav'
 import Stars from '../components/Stars'
 import Planets from '../components/Planets'
-
 import TiltImage from '../components/TiltImage'
+import Button from '../components/Button'
 
 import ReactFullpage from '@fullpage/react-fullpage'
-
-
 import "../components/overrides.scss"
 
-
-import Nav from '../components/Nav'
-
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import Button from '../components/Button'
+
 
 //import Parallax from 'react-springy-parallax'
 
 //import { Parallax } from 'react-spring/renderprops-addons'
 
-const anchors = ['home', 'case01'];
+const anchors = ['home', 'case01', 'case02'];
 
 
 class MySection extends React.Component {
@@ -53,12 +48,9 @@ const IndexPage  = () => (
     <ReactFullpage
       anchors={anchors}
       navigation
-      //lockAnchors
-      scrollingSpeed={1000}
-      touchSensitivity={10}
+      scrollingSpeed={800}
+      //touchSensitivity={5}
       animateAnchor={false}
-      //parallax={true}
-      //navigationTooltips={anchors}
       onLeave={(origin, destination, direction) => {
         console.log("onLeave event", { origin, destination, direction });
       }}
@@ -96,30 +88,65 @@ const IndexPage  = () => (
                 </div>
               </section>
             </MySection>
+            
             <MySection>
-              <section id='noise-background' className='iofit'> 
+              <section id='noise-background' className='walli'> 
                 <div className='casestudy-container'>
                   <div className='casestudy-left'>
                     <div className='tools'>
                       <h5>UI Design</h5>
                       
-                      <img width='40' src={require('../images/sketch.png')} alt='sketch' />
-                      <img width='40' src={require('../images/ai.png')} alt='sketch' />
-                      <img width='40' src={require('../images/ps.png')} alt='sketch' />
-                      <img width='40' src={require('../images/ae.png')} alt='sketch' />
+                      <img width='36' src={require('../images/sketch.png')} alt='sketch' />
+                      <img width='36' src={require('../images/ai.png')} alt='sketch' />
+                      <img width='36' src={require('../images/ps.png')} alt='sketch' />
+                    </div>
+
+                    <div className='tilt-image'>
+                      <TiltImage image={require('../images/walli_header.png')} />
+                    </div>
+                  </div>
+
+                  <div className='casestudy-right'>
+                    <h4><hr/> 01</h4>
+                    <h1>Walli</h1>
+                    <div className='description'>
+                      Interface designs for a new electronic wallet app
+                    </div>
+                    <AniLink cover to='/casestudy-walli' direction='left' bg='#ECEDFB'>
+                      <div className='button-container'>
+                        <div className='link-container'>
+                          <Button text=' View case' id='on-black' />
+                          <Button text=' View case' id='on-black'/>
+                        </div>
+                      </div>
+                    </AniLink>
+                  </div>
+                </div>
+              </section>
+            </MySection>
+
+            <MySection>
+              <section id='noise-background' className='iofit'> 
+                <div className='casestudy-container'>
+                  <div className='casestudy-left'>
+                    <div className='tools'>
+                      <h5>UI/Interaction Design</h5>
+                      
+                      <img width='36' src={require('../images/sketch.png')} alt='sketch' />
+                      <img width='36' src={require('../images/ai.png')} alt='sketch' />
+                      <img width='36' src={require('../images/ps.png')} alt='sketch' />
+                      <img width='36' src={require('../images/ae.png')} alt='sketch' />
                     </div>
 
                     <div className='tilt-image'><TiltImage image={require('../images/iofit_header.jpg')} /></div>
                   </div>
 
                   <div className='casestudy-right'>
-                    <h4><hr/> 01</h4>
+                    <h4><hr/> 02</h4>
                     <h1>iofit</h1>
                     <div className='description'>
                       A diet tracking and workout planning app, casestudy includes visual interface design as well as interaction design for some flows.
                     </div>
-
-            
                     <AniLink cover to='/casestudy-iofit' direction='left' bg='#ECEDFB'>
                       <div className='button-container'>
                         <div className='link-container'>
@@ -128,14 +155,11 @@ const IndexPage  = () => (
                         </div>
                       </div>
                     </AniLink>
-
-
                   </div>
                 </div>
-                
               </section>
             </MySection>
-            
+
           </ReactFullpage.Wrapper>
         );
       }}

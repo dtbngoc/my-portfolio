@@ -26,12 +26,17 @@ $secondary-color: #6c80b6;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
 }
 
-.fp-viewing-case01 .Header {
+//.fp-viewing-case01 .Header,
+.fp-viewing-case02 .Header {
   color: $background-color;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
   
 }
-
+.fp-viewing-case01 .Header {
+  color: white;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+  
+}
 #right.Navigation {
   position: fixed;
   top: 80px;
@@ -197,14 +202,27 @@ h4 {
   align-items: center;
   height: 100vh
 }
-
+.walli .casestudy-container {
+  background-color: #7685FF;
+}
 .casestudy-left {
   display: grid;
   grid-template-columns: auto 560px;
 }
 
 .casestudy-left .tilt-image {
+  
   justify-self: end;
+}
+
+.walli .casestudy-left .tilt-image {
+  position: relative;
+  justify-self: end
+}
+.walli .casestudy-left .tilt-image >img {
+  z-index: 0;
+  position: absolute;
+  top: 28%;
 }
 .tools {
  display: flex;
@@ -213,18 +231,26 @@ h4 {
   align-items: flex-end;
 }
 
-.tools > img {
-  margin: 16px 32px;
+.walli .casestudy-left .tools {
+  justify-content: center;
 }
 
-.iofit .tools > img:nth-child(5) {
-  margin: 16px 32px 8px;
+.tools > img {
+  margin: 12px 44px;
 }
+
+
+// .iofit .tools > img:nth-child(5) {
+//   margin: 8px 32px 8px;
+// }
+// .walli .tools > img:nth-child(4) {
+//   margin: 8px 32px 8px;
+// }
 
 .tools > h5 {
-  margin: 44px 38px;
+  margin: 38px 50px;
   font-family: 'Overpass Mono', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: $background-color;
   
@@ -234,12 +260,13 @@ h4 {
   transform: rotate(180deg)
 }
 
+.walli .tools > h5 {
+  color: white;
+}
 
 
 
 .casestudy-right {
-  //display: grid;
- // grid-template-rows: 1fr 1fr auto;
   padding-left: 12%;
   justify-self: start;
 }
@@ -249,19 +276,33 @@ h4 {
   margin: 20px 0px 120px 0px;
   font-size: 18px;
   font-weight: 300;
-  color: rgba($background-color, .5);
+  color: rgba($background-color, .5)
 }
+
+.walli .casestudy-right .description {
+  color: rgba(white, .8)
+}
+
 .casestudy-right hr {
   border: .5px solid $background-color;
   width: 100px;
   display: inline-block;
-  margin: 10px 10px 10px 0px;
+  margin: 10px 10px 10px 0px
 }
 
-.casestudy-right h1, h4 {
-  margin: 20px 0px;
+.casestudy-right h1,
+.casestudy-right h4 {
+  margin: 20px 0px
 }
 
+.walli .casestudy-right hr {
+  border-color: white
+}
+
+.walli .casestudy-right h1, 
+.walli .casestudy-right h4 {
+  color: white
+}
 
 
 

@@ -5,10 +5,10 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import Button from '../components/Button'
 
-const IofitPage  = () => (
+const WalliPage  = () => (
    // <Layout>
     <div className='Iofit'>
-        <AniLink cover to='/#case02' direction='right' bg='#ECEDFB'>
+        <AniLink cover to='/#case01' direction='right' bg='#ECEDFB'>
             <div className='Header'>
                 <div className='link-container'>
                     <Button text='Back' id='on-black'/>
@@ -22,4 +22,4 @@ const IofitPage  = () => (
    // </Layout>
 )
 
-export default IofitPage
+export default WalliPage

@@ -26,6 +26,10 @@ $text-color: #ECEDFB;
     border-width: 2px;
     border-color: $text-color;
 }
+
+.walli .button-container {
+    border-color: #B2B9FF;
+}
 .button-container .link-container {
     width: 100px;
 }
@@ -42,10 +46,15 @@ $text-color: #ECEDFB;
     height:22px;
     letter-spacing: .5px;
 }
-.fp-viewing-home #on-black.Link{
+.fp-viewing-home #on-black.Link {
     transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1.0);
 }
-.fp-viewing-case01 #on-black.Link{
+.fp-viewing-case01 #on-black.Link {
+    color: white;
+    transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+}
+
+.fp-viewing-case02 #on-black.Link {
     color: $background-color;
     transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1.0);
 }
