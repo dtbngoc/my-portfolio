@@ -6,8 +6,8 @@ $secondary-color: #6c80b6;
     background: $text-color
 }
 
-.fp-viewing-1 #fp-nav ul li a span,
-.fp-viewing-1 .fp-slidesNav ul li a span {
+.fp-viewing-case01 #fp-nav ul li a span,
+.fp-viewing-case01 .fp-slidesNav ul li a span {
     
     background: $background-color;
    
@@ -26,10 +26,10 @@ $secondary-color: #6c80b6;
 }
 
 
-.fp-viewing-1 #fp-nav ul li:hover a.active span,
-.fp-viewing-1 #fp-nav ul li a.active span,
-.fp-viewing-1 .fp-slidesNav ul li:hover a.active span,
-.fp-viewing-1 .fp-slidesNav ul li a.active span {
+.fp-viewing-case01 #fp-nav ul li:hover a.active span,
+.fp-viewing-case01 #fp-nav ul li a.active span,
+.fp-viewing-case01 .fp-slidesNav ul li:hover a.active span,
+.fp-viewing-1-case01 .fp-slidesNav ul li a.active span {
   border-color: $background-color;
 }
 

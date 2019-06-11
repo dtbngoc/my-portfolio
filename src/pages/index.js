@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../components/layout.scss"
 
 //import Layout from '../components/layout'
 
@@ -19,10 +19,11 @@ import Nav from '../components/Nav'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Button from '../components/Button'
 
+//import Parallax from 'react-springy-parallax'
 
+//import { Parallax } from 'react-spring/renderprops-addons'
 
-
-//const anchors = ["firstPage", "secondPage", "thirdPage"];
+const anchors = ['home', 'case01'];
 
 
 class MySection extends React.Component {
@@ -50,9 +51,13 @@ const IndexPage  = () => (
   
 
     <ReactFullpage
-      //anchors={anchors}
+      anchors={anchors}
       navigation
-      
+      //lockAnchors
+      scrollingSpeed={1000}
+      touchSensitivity={10}
+      animateAnchor={false}
+      //parallax={true}
       //navigationTooltips={anchors}
       onLeave={(origin, destination, direction) => {
         console.log("onLeave event", { origin, destination, direction });
@@ -62,6 +67,7 @@ const IndexPage  = () => (
           <ReactFullpage.Wrapper>
             <MySection>
               <section id='noise-background' className="Landing">
+                
                 <div className="Intro">
                   <h2>I create <br /> products <br />not just art</h2>
                     <p>I design smart interface and experiences that are<br />beautiful, simple and just make sense!</p>
@@ -139,7 +145,7 @@ const IndexPage  = () => (
 
   </div>
   
-  //</Layout>
+ // </Layout>
 )
 
 export default IndexPage

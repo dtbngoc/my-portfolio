@@ -22,11 +22,11 @@ $secondary-color: #6c80b6;
    //transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
  }
 
-.fp-viewing-0 .Header {
+.fp-viewing-home .Header {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
 }
 
-.fp-viewing-1 .Header {
+.fp-viewing-case01 .Header {
   color: $background-color;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
   
@@ -218,7 +218,7 @@ h4 {
 }
 
 .iofit .tools > img:nth-child(5) {
-  margin: 16px 32px 7px;
+  margin: 16px 32px 8px;
 }
 
 .tools > h5 {
