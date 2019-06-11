@@ -1,10 +1,38 @@
+$background-color: #111421;
+$text-color: #ECEDFB;
+$secondary-color: #6c80b6;
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: $text-color
+}
+
+.fp-viewing-1 #fp-nav ul li a span,
+.fp-viewing-1 .fp-slidesNav ul li a span {
+    
+    background: $background-color;
+   
+}
+
 #fp-nav ul li:hover a.active span,
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li:hover a.active span,
 .fp-slidesNav ul li a.active span {
-  background-color: whitesmoke;
-  
+  background: none;
+  width: 4px;
+  height: 4px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: $text-color
 }
+
+
+.fp-viewing-1 #fp-nav ul li:hover a.active span,
+.fp-viewing-1 #fp-nav ul li a.active span,
+.fp-viewing-1 .fp-slidesNav ul li:hover a.active span,
+.fp-viewing-1 .fp-slidesNav ul li a.active span {
+  border-color: $background-color;
+}
+
 
 #fp-nav.fp-right {
     right: 8.3%;

@@ -1,18 +1,25 @@
-import Layout from '../components/layout'
+//import Layout from '../components/layout'
 //import "../components/layout.scss"
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-const Iofit  = () => (
-    <Layout>
+import Button from '../components/Button'
+
+const IofitPage  = () => (
+   // <Layout>
     <div className='Iofit'>
-        <AniLink cover to='/' direction='left' duration='1' color='#111421'>
+        <AniLink cover to='/' direction='right' bg='#ECEDFB'>
             <div className='Header'>
-                Close
-            </div>       
+                <div className='link-container'>
+                    <Button text='Back' id='on-black'/>
+                    <Button text='Back' id='on-black'/>
+                </div>
+            </div>
+            
         </AniLink>
+            
     </div>
-    </Layout>
+   // </Layout>
 )
 
-export default Iofit
+export default IofitPage

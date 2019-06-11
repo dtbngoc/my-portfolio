@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import Layout from '../components/layout'
+//import Layout from '../components/layout'
 
 import Stars from '../components/Stars'
 import Planets from '../components/Planets'
@@ -36,7 +36,8 @@ class MySection extends React.Component {
 }
 
 const IndexPage  = () => (
-  <Layout>
+  //<Layout>
+  <div className='Index'>
     <div className='Header'>
       Ngoc Dang
     </div>
@@ -113,7 +114,7 @@ const IndexPage  = () => (
                     </div>
 
             
-                    <AniLink cover to='/casestudy-iofit' direction='right' duration='1' color='#111421'>
+                    <AniLink cover to='/casestudy-iofit' direction='left' bg='#ECEDFB'>
                       <div className='button-container'>
                         <div className='link-container'>
                           <Button text=' View case' id='on-white' />
@@ -136,9 +137,9 @@ const IndexPage  = () => (
   
   
 
+  </div>
   
-  
-  </Layout>
+  //</Layout>
 )
 
 export default IndexPage

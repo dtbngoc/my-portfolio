@@ -1,22 +1,11 @@
 $background-color: #111421;
 $text-color: #ECEDFB;
-$text-color-1: #6c80b6;
+$secondary-color: #6c80b6;
 
 @import "gram-img";
-// .Header {
-//   position: absolute;
-//   //z-index: 100;
-//   top: 72px;
-//   left: 10%;
 
-//   font-family: "Overpass Mono";
-//   font-size: 16px;
-//   font-weight: 700;
-//   color: $text-color;
-// }
-
-.fp-viewing-0 .Header {
-  position: absolute;
+.Header {
+  position: fixed;
   z-index: 100;
   top: 72px;
   left: 10%;
@@ -25,19 +14,19 @@ $text-color-1: #6c80b6;
   font-size: 16px;
   font-weight: 700;
   color: $text-color;
-  
+}
+.Header #back {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 1s 2s ease, opacity 1s 2s
+   //transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+ }
+
+.fp-viewing-0 .Header {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
 }
 
 .fp-viewing-1 .Header {
-  position: absolute;
-  z-index: 100;
-  top: 72px;
-  left: 10%;
-
-  font-family: "Overpass Mono";
-  font-size: 16px;
-  font-weight: 700;
   color: $background-color;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
   
