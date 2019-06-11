@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './SwapLink.scss'
+import './Button.scss'
 
-class SwapLink extends Component {
+class Button extends Component {
   splitText() {
     return this.props.text.split('');
   }
@@ -27,4 +27,4 @@ class SwapLink extends Component {
    
 }
 
-export default SwapLink
+export default Button

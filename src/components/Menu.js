@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Menu.css";
-import SwapLink from './SwapLink'
+import Button from './Button'
  
 class Menu extends Component {
   render() {
@@ -14,8 +14,8 @@ class Menu extends Component {
         <div id="flyoutMenu" className={visibility}>
             <div id={this.props.align} className='Navigation' onMouseDown={this.props.handleMouseDown}>
                 <div className='link-container'>
-                    <SwapLink text='Close' id='on-white'/>
-                    <SwapLink text='Close' id='on-white'/>
+                    <Button text='Close' id='on-white'/>
+                    <Button text='Close' id='on-white'/>
                 </div>
             </div>
             <div>

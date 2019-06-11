@@ -1,6 +1,5 @@
 import React from 'react'
-import './Nav.scss'
-import SwapLink from './SwapLink';
+import Button from './Button';
 import Menu from './Menu'
 
 
@@ -35,11 +34,11 @@ class Nav extends React.Component {
     render() {
         return (
           <div className='menu'> 
-              <div id="roundButton"  onMouseDown={this.handleMouseDown}>
+              <div onMouseDown={this.handleMouseDown}>
                 <div id={this.props.align} className='Navigation'>
-                    <div className='link-container'>
-                        <SwapLink text={this.props.name} id='on-black'/>
-                        <SwapLink text={this.props.name} id='on-black'/>
+                    <div className='link-container' >
+                        <Button text={this.props.name} id='on-black'/>
+                        <Button text={this.props.name} id='on-black'/>
                     </div>
                 </div>
 

@@ -3,16 +3,24 @@ import React from 'react'
 
 import Layout from '../components/layout'
 
-import Stars from '../components/Stars';
-import Planets from '../components/Planets';
+import Stars from '../components/Stars'
+import Planets from '../components/Planets'
 
-import TiltImage from '../components/TiltImage';
+import TiltImage from '../components/TiltImage'
 
-import ReactFullpage from '@fullpage/react-fullpage';
+import ReactFullpage from '@fullpage/react-fullpage'
 
 
-import "../components/overrides.scss";
-import Nav from '../components/Nav';
+import "../components/overrides.scss"
+
+
+import Nav from '../components/Nav'
+
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import Button from '../components/Button'
+
+
+
 
 //const anchors = ["firstPage", "secondPage", "thirdPage"];
 
@@ -27,21 +35,18 @@ class MySection extends React.Component {
   }
 }
 
-const IndexPage = () => (
+const IndexPage  = () => (
   <Layout>
-    
     <div className='Header'>
       Ngoc Dang
     </div>
-    
-    <Nav name='About' align='right'>
-      <h2>
-        I'm a designer based in Vietnam, <br />focused on UI/UX Design, Web Design and Development.
-      </h2>
-    </Nav>
-    
 
-   
+    <Nav name='About' align='right'>
+        <h3>
+          I'm a designer based in Vietnam, <br />focused on UI/UX Design, Web Design and Development.
+        </h3>
+    </Nav>
+  
 
     <ReactFullpage
       //anchors={anchors}
@@ -57,8 +62,8 @@ const IndexPage = () => (
             <MySection>
               <section id='noise-background' className="Landing">
                 <div className="Intro">
-                  <h1>I create <br /> products <br />not just art</h1>
-                    <p>I design smart experiences that are beautiful, <br />simple and just make sense!</p>
+                  <h2>I create <br /> products <br />not just art</h2>
+                    <p>I design smart interface and experiences that are<br />beautiful, simple and just make sense!</p>
                 </div>
                 <div className='Gramophone'>
                   <div className='GramophoneGroup'>
@@ -85,19 +90,41 @@ const IndexPage = () => (
               </section>
             </MySection>
             <MySection>
-              <section id='noise-background' className='casestudy-container'>
-                {/* <CaseStudy 
-                  image={require('../images/iofit_header.jpg')}
-                  text='Case study I:' >
+              <section id='noise-background' className='iofit'> 
+                <div className='casestudy-container'>
+                  <div className='casestudy-left'>
+                    <div className='tools'>
+                      <h5>UI Design</h5>
+                      
+                      <img width='40' src={require('../images/sketch.png')} alt='sketch' />
+                      <img width='40' src={require('../images/ai.png')} alt='sketch' />
+                      <img width='40' src={require('../images/ps.png')} alt='sketch' />
+                      <img width='40' src={require('../images/ae.png')} alt='sketch' />
+                    </div>
 
-                  
+                    <div className='tilt-image'><TiltImage image={require('../images/iofit_header.jpg')} /></div>
+                  </div>
 
-                </CaseStudy> */}
-                 <TiltImage image={require('../images/iofit_header.jpg')} />
-                
-                  
-                  <h1>iofit</h1>
-                
+                  <div className='casestudy-right'>
+                    <h4><hr/> 01</h4>
+                    <h1>iofit</h1>
+                    <div className='description'>
+                      A diet tracking and workout planning app, casestudy includes visual interface design as well as interaction design for some flows.
+                    </div>
+
+            
+                    <AniLink cover to='/casestudy-iofit' direction='right' duration='1' color='#111421'>
+                      <div className='button-container'>
+                        <div className='link-container'>
+                          <Button text=' View case' id='on-white' />
+                          <Button text=' View case' id='on-white'/>
+                        </div>
+                      </div>
+                    </AniLink>
+
+
+                  </div>
+                </div>
                 
               </section>
             </MySection>

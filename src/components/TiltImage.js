@@ -3,25 +3,10 @@ import { findDOMNode } from 'react-dom'
 import styled from 'styled-components'
 
 
-const Wrapper = styled.section`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  height: 720px;
-  width: 560px;
-  background: #F0F1FF;
-  border-radius: 8px;
-  box-shadow: -16px 8px 40px rgba(115, 122, 143, 0.12);
-`;
-
-
 const Picture = styled.img`
     src: url(${props => props.src});
-    //margin-left: 90px;
-    width: 564px;
-    //-webkit-filter: grayscale(100%);
-    //filter: grayscale(100%);
-    //filter: hue-rotate(160deg);
+    width: 560px;
+    
 `
 
 
@@ -162,8 +147,7 @@ class TiltImage extends Component {
         onMouseLeave={this.handleMouseLeave}
       >
         
-        {/* <img src={this.props.image} alt="" height='480px' /> */}
-        <Wrapper id='noise-background'>
+        
           <div
           
             style={style}
@@ -172,11 +156,11 @@ class TiltImage extends Component {
             onMouseMove={this.handleMouseMove}
             onMouseLeave={this.handleMouseLeave}
           >
-          {/* <img src={this.props.image} alt="" height='400px' />  */}
+            
           <Picture src={this.props.image} />
 
           </div>
-        </Wrapper>
+        
 
       </div>
 

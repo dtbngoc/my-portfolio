@@ -3,6 +3,7 @@ module.exports = {
     title: 'Ngoc Dang',
   },
   plugins: [
+
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -32,8 +33,17 @@ module.exports = {
         // Add any options here
       },
     },
+    `gatsby-plugin-transition-link`,
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+     //'gatsby-plugin-offline',
+
+  //    {
+  //     resolve: "gatsby-plugin-transition-link",
+  //     options: {
+  //         layout: require.resolve(`./src/components/layout`)
+  //       }
+  //  }
   ],
 }
