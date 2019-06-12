@@ -57,17 +57,18 @@ $star-count : 500;
 	}
 }
 
-.shooting-star {
-	position: absolute;
-	width: 1px;
-	height: 60px;
-  visibility: hidden;
+// .shooting-star {
+// 	position: absolute;
+// 	width: 1px;
+//   height: 60px;
+//   transform: scale(0.5);
+//   visibility: hidden;
   
-  box-shadow: 0 0 10px 2px rgba(68, 0, 255, 0.5);
-	top: 0px;
-	left: 0px;
+//   box-shadow: 0 0 10px 2px rgba(68, 0, 255, 0.5);
+// 	top: 0px;
+// 	left: 0px;
 	
-	border-radius: 35%;
-	background-image: linear-gradient(#111421 10%, white 100%);
-	animation: meteor cubic-bezier(0.2, 0.2, 0.2, 0.2) 3s infinite;
-}
+// 	border-radius: 35%;
+// 	background-image: linear-gradient(#111421 10%, white 100%);
+// 	animation: meteor 3s infinite;
+// }
