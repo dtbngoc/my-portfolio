@@ -2,6 +2,7 @@ import React from 'react'
 
 const Stars = props => (
     <div className='Stars'>
+        <div className='shooting-star'></div>
         <div className='star' />
         <div className='star' />
         <div className='star' />
@@ -403,7 +404,6 @@ const Stars = props => (
         <div className='star' />
         <div className='star' />
         <div className='star' />
-
     </div>
 )
 

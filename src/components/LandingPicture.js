@@ -10,6 +10,9 @@ const LandingPicture = props => (
             <div className="star-container-top">
                 <Stars />
             </div>
+            <div className='PlanetsGroup'>
+                <Planets />
+            </div>
             <div className='star-container-bottom'>
                 <Stars />
             </div>
@@ -20,9 +23,6 @@ const LandingPicture = props => (
                 </clipPath>
                 </defs>
             </svg>
-            <div className='PlanetsGroup'>
-                <Planets />
-            </div>
         </div>
     </div>
 )

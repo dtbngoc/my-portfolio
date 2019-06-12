@@ -2,8 +2,17 @@ $background-color: #111421;
 $text-color: #ECEDFB;
 $secondary-color: #6c80b6;
 
-.fp-viewing-home #fp-nav ul li a span,
-.fp-viewing-home .fp-slidesNav ul li a span {
+// .fp-viewing-home #fp-nav ul li a span,
+// .fp-viewing-home .fp-slidesNav ul li a span {
+//   background: $text-color;
+//   -webkit-transition: none;
+//   -moz-transition: none;
+//   -o-transition: none;
+//   transition: none
+// }
+
+ #fp-nav ul li a span,
+ .fp-slidesNav ul li a span {
   background: $text-color;
   -webkit-transition: none;
   -moz-transition: none;
@@ -13,25 +22,29 @@ $secondary-color: #6c80b6;
 
 .fp-viewing-case01 #fp-nav ul li a span,
 .fp-viewing-case01 .fp-slidesNav ul li a span {  
-  background: white;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none
+  background: white
 }
 .fp-viewing-case02 #fp-nav ul li a span,
 .fp-viewing-case02 .fp-slidesNav ul li a span {
-  background: $background-color;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  transition: none
+  background: $background-color
 }
 
-.fp-viewing-home #fp-nav ul li:hover a.active span,
-.fp-viewing-home #fp-nav ul li a.active span,
-.fp-viewing-home .fp-slidesNav ul li:hover a.active span,
-.fp-viewing-home .fp-slidesNav ul li a.active span {
+// .fp-viewing-home #fp-nav ul li:hover a.active span,
+// .fp-viewing-home #fp-nav ul li a.active span,
+// .fp-viewing-home .fp-slidesNav ul li:hover a.active span,
+// .fp-viewing-home .fp-slidesNav ul li a.active span {
+//   background: none;
+//   width: 4px;
+//   height: 4px;
+//   border-style: solid;
+//   border-width: 4px;
+//   border-color: $text-color
+// }
+
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span {
   background: none;
   width: 4px;
   height: 4px;
@@ -40,16 +53,10 @@ $secondary-color: #6c80b6;
   border-color: $text-color
 }
 
-
 .fp-viewing-case01 #fp-nav ul li:hover a.active span,
 .fp-viewing-case01 #fp-nav ul li a.active span,
 .fp-viewing-case01 .fp-slidesNav ul li:hover a.active span,
 .fp-viewing-case01 .fp-slidesNav ul li a.active span {
-  background: none;
-  width: 4px;
-  height: 4px;
-  border-style: solid;
-  border-width: 4px;
   border-color: white
 }
 
@@ -57,17 +64,13 @@ $secondary-color: #6c80b6;
 .fp-viewing-case02 #fp-nav ul li a.active span,
 .fp-viewing-case02 .fp-slidesNav ul li:hover a.active span,
 .fp-viewing-case02 .fp-slidesNav ul li a.active span {
-  background: none;
-  width: 4px;
-  height: 4px;
-  border-style: solid;
-  border-width: 4px;
   border-color: $background-color
 }
 
-.fp-viewing-home #fp-nav.fp-right,
-.fp-viewing-case01 #fp-nav.fp-right,
-.fp-viewing-case02 #fp-nav.fp-right {
+// .fp-viewing-home #fp-nav.fp-right,
+// .fp-viewing-case01 #fp-nav.fp-right,
+// .fp-viewing-case02 
+#fp-nav.fp-right {
   right: 8.3%
 }
 
