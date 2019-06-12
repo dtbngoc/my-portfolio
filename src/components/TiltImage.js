@@ -5,7 +5,8 @@ import styled from 'styled-components'
 
 const Picture = styled.img`
     src: url(${props => props.src});
-    width: 560px;
+    object-fit: contain;
+    width: 100%;
     
 `
 

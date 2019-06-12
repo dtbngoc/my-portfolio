@@ -5,7 +5,6 @@ import React from 'react'
 
 const Planets = props => (
     <div className='Planets'>
-        
         <div className='view-3D'>
             <div id='solar-system'>
                 <div id='sun'/>

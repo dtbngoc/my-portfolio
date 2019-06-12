@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Menu.css";
+import "./Menu.scss";
 import Button from './Button'
  
 class Menu extends Component {
@@ -11,8 +11,8 @@ class Menu extends Component {
     }
  
     return (
-        <div id="flyoutMenu" className={visibility}>
-            <div id={this.props.align} className='Navigation' onMouseDown={this.props.handleMouseDown}>
+        <div id="flyout-menu" className={visibility}>
+            <div id={this.props.align} className='navigation' onMouseDown={this.props.handleMouseDown}>
                 <div className='link-container'>
                     <Button text='Close' id='on-white'/>
                     <Button text='Close' id='on-white'/>

@@ -1,0 +1,28 @@
+
+
+#flyout-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ECEDFB;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: transform .5s
+              cubic-bezier(0, .52, 0, 1);
+  overflow: scroll;
+  z-index: 101
+}
+   
+#flyout-menu.hide {
+  transform: translate3d(100vw, 0, 0);
+}
+  
+#flyout-menu.show {
+  transform: translate3d(0vw, 0, 0);
+  overflow: hidden;
+}
+   
+
+   
+
+  

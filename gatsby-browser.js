@@ -8,3 +8,5 @@
 require('typeface-playfair-display');
 require('typeface-overpass');
 require('typeface-overpass-mono');
+
+require('./src/components/layout.scss')

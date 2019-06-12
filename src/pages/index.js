@@ -1,10 +1,8 @@
 import React from 'react'
-import "../components/layout.scss"
+//import "../components/layout.scss"
 //import Layout from '../components/layout'
 
 import Nav from '../components/Nav'
-import Stars from '../components/Stars'
-import Planets from '../components/Planets'
 import TiltImage from '../components/TiltImage'
 import Button from '../components/Button'
 
@@ -12,6 +10,7 @@ import ReactFullpage from '@fullpage/react-fullpage'
 import "../components/overrides.scss"
 
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import LandingPicture from '../components/LandingPicture';
 
 
 //import Parallax from 'react-springy-parallax'
@@ -34,7 +33,7 @@ class MySection extends React.Component {
 const IndexPage  = () => (
   //<Layout>
   <div className='Index'>
-    <div className='Header'>
+    <div className='header'>
       Ngoc Dang
     </div>
 
@@ -48,7 +47,7 @@ const IndexPage  = () => (
     <ReactFullpage
       anchors={anchors}
       navigation
-      scrollingSpeed={800}
+      scrollingSpeed={700}
       //touchSensitivity={5}
       animateAnchor={false}
       onLeave={(origin, destination, direction) => {
@@ -58,33 +57,14 @@ const IndexPage  = () => (
         return (
           <ReactFullpage.Wrapper>
             <MySection>
-              <section id='noise-background' className="Landing">
+              <section id='noise-background' className="landing">
                 
-                <div className="Intro">
+                <div className="intro">
                   <h2>I create <br /> products <br />not just art</h2>
-                    <p>I design smart interface and experiences that are<br />beautiful, simple and just make sense!</p>
+                  <p>I design smart interface and experiences that are beautiful, simple and just make sense!</p>
                 </div>
-                <div className='Gramophone'>
-                  <div className='GramophoneGroup'>
-                    <div id='shadow' />
-                    <div id='gramophone-img' />
-                    <div className="star-container-top">
-                      <Stars />
-                    </div>
-                    <div className='star-container-bottom'>
-                      <Stars />
-                    </div>
-                    <svg>
-                      <defs>
-                        <clipPath id="clip0">
-                          <path d="M251.401 247.776C233.43 289.52 205.472 320.301 162.711 334.857C135.355 358.592 107.101 364.069 77.8398 350.282C46.2401 349.335 25.2197 333.92 18.43 299.004C-1.31736 270.809 -5.91619 239.397 8.14676 204.067C4.05123 164.73 18.9037 131.305 48.6086 102.528C62.0399 67.3358 86.6328 43.3153 120.265 28.295C143.102 0.968504 172.145 -5.16985 205.768 3.92913C240.99 -0.511806 262.513 14.39 274.218 43.0784C297.064 67.3358 300.449 99.4289 291.251 136.595C293.255 186.738 278.599 222.62 251.401 247.776Z" fill="white"/>
-                        </clipPath>
-                      </defs>
-                    </svg>
-                    <div className='PlanetsGroup'>
-                      <Planets />
-                    </div>
-                  </div>
+                <div className='landing-picture'>
+                  <LandingPicture />
                 </div>
               </section>
             </MySection>
@@ -96,23 +76,26 @@ const IndexPage  = () => (
                     <div className='tools'>
                       <h5>UI Design</h5>
                       
-                      <img width='36' src={require('../images/sketch.png')} alt='sketch' />
-                      <img width='36' src={require('../images/ai.png')} alt='sketch' />
-                      <img width='36' src={require('../images/ps.png')} alt='sketch' />
+                      <img src={require('../images/sketch.png')} alt='sketch' />
+                      <img src={require('../images/ai.png')} alt='sketch' />
+                      <img src={require('../images/ps.png')} alt='sketch' />
                     </div>
 
+                   
                     <div className='tilt-image'>
                       <TiltImage image={require('../images/walli_header.png')} />
                     </div>
+                  
+                    
                   </div>
 
                   <div className='casestudy-right'>
                     <h4><hr/> 01</h4>
                     <h1>Walli</h1>
-                    <div className='description'>
+                    <p>
                       Interface designs for a new electronic wallet app
-                    </div>
-                    <AniLink cover to='/casestudy-walli' direction='left' bg='#ECEDFB'>
+                    </p>
+                    <AniLink cover to='/casestudy-walli' direction='left' bg='#111421'>
                       <div className='button-container'>
                         <div className='link-container'>
                           <Button text=' View case' id='on-black' />
@@ -132,21 +115,25 @@ const IndexPage  = () => (
                     <div className='tools'>
                       <h5>UI/Interaction Design</h5>
                       
-                      <img width='36' src={require('../images/sketch.png')} alt='sketch' />
-                      <img width='36' src={require('../images/ai.png')} alt='sketch' />
-                      <img width='36' src={require('../images/ps.png')} alt='sketch' />
-                      <img width='36' src={require('../images/ae.png')} alt='sketch' />
+                      <img src={require('../images/sketch.png')} alt='sketch' />
+                      <img src={require('../images/ai.png')} alt='sketch' />
+                      <img src={require('../images/ps.png')} alt='sketch' />
+                      <img src={require('../images/ae.png')} alt='sketch' />
                     </div>
 
-                    <div className='tilt-image'><TiltImage image={require('../images/iofit_header.jpg')} /></div>
+                   
+                    <div className='tilt-image'>
+                      <TiltImage image={require('../images/iofit_header.jpg')} />
+                    </div>
+                    
                   </div>
 
                   <div className='casestudy-right'>
                     <h4><hr/> 02</h4>
                     <h1>iofit</h1>
-                    <div className='description'>
+                    <p>
                       A diet tracking and workout planning app, casestudy includes visual interface design as well as interaction design for some flows.
-                    </div>
+                    </p>
                     <AniLink cover to='/casestudy-iofit' direction='left' bg='#ECEDFB'>
                       <div className='button-container'>
                         <div className='link-container'>
@@ -159,17 +146,12 @@ const IndexPage  = () => (
                 </div>
               </section>
             </MySection>
-
           </ReactFullpage.Wrapper>
         );
       }}
     />
-  
-  
-
   </div>
-  
- // </Layout>
+  //</Layout>
 )
 
 export default IndexPage

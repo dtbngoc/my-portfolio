@@ -35,7 +35,7 @@ class Nav extends React.Component {
         return (
           <div className='menu'> 
               <div onMouseDown={this.handleMouseDown}>
-                <div id={this.props.align} className='Navigation'>
+                <div id={this.props.align} className='navigation'>
                     <div className='link-container' >
                         <Button text={this.props.name} id='on-black'/>
                         <Button text={this.props.name} id='on-black'/>

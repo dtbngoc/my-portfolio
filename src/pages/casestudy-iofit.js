@@ -1,5 +1,5 @@
 //import Layout from '../components/layout'
-import "../components/layout.scss"
+//import "../components/layout.scss"
 import React from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
