@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import "./Menu.scss";
+import React, { Component } from "react"
 import Button from './Button'
  
 class Menu extends Component {

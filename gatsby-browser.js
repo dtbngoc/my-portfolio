@@ -10,3 +10,5 @@ require('typeface-overpass');
 require('typeface-overpass-mono');
 
 require('./src/components/layout.scss')
+require('./src/components/overrides.scss')
+require('./src/planets-style/planets-style.scss')

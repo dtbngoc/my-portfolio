@@ -1,7 +1,6 @@
 import React from 'react'
-import Stars from '../components/Stars'
-import Planets from '../components/Planets'
-import './LandingPicture.scss'
+import Stars from './Stars'
+import Planets from './Planets'
 
 const LandingPicture = props => (
     <div className='LandingPicture'>

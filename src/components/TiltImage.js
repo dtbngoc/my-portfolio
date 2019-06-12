@@ -10,8 +10,6 @@ const Picture = styled.img`
     
 `
 
-
-
 class TiltImage extends Component {
   constructor(props) {
     super(props)

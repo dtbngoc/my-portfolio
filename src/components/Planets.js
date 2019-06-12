@@ -1,6 +1,3 @@
-
-import '../planets-style/planets-style.scss'
-
 import React from 'react'
 
 const Planets = props => (

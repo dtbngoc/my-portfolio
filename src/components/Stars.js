@@ -1,5 +1,4 @@
 import React from 'react'
-import './Stars.scss'
 
 const Stars = props => (
     <div className='Stars'>

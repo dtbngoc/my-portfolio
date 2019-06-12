@@ -1,6 +1,6 @@
 import React from 'react'
 //import "../components/layout.scss"
-//import Layout from '../components/layout'
+import Layout from '../components/layout'
 
 import Nav from '../components/Nav'
 import TiltImage from '../components/TiltImage'
@@ -31,8 +31,7 @@ class MySection extends React.Component {
 }
 
 const IndexPage  = () => (
-  //<Layout>
-  <div className='Index'>
+  <Layout>
     <div className='header'>
       Ngoc Dang
     </div>
@@ -150,8 +149,7 @@ const IndexPage  = () => (
         );
       }}
     />
-  </div>
-  //</Layout>
+  </Layout>
 )
 
 export default IndexPage

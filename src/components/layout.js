@@ -4,13 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 
-
-import './layout.scss'
-import './Stars.scss'
-import '../planets-style/planets-style.scss'
-//import './overrides.scss'
-
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
