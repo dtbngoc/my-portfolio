@@ -21,12 +21,36 @@ const WalliPage  = () => (
             </AniLink>
             <div className='content-container'>
 
-               <div><Fade bottom><img width='100%' src={require('../images/01_walli/01_header.jpg')} alt='mockup' /></Fade> </div>
-               <div><Fade bottom><img width='100%' src={require('../images/01_walli/02_color.jpg')} alt='mockup' /></Fade> </div>
-               <div><Fade bottom><img width='100%' src={require('../images/01_walli/03_icons.jpg')} alt='mockup' /></Fade> </div>
-               <div><Fade bottom><img width='100%' src={require('../images/01_walli/04_onboarding.jpg')} alt='mockup' /></Fade> </div>
-               <div><Fade bottom><img width='100%' src={require('../images/01_walli/05_main.jpg')} alt='mockup' /></Fade> </div>
-               <div><Fade bottom><img width='100%' src={require('../images/01_walli/07_all screens.jpg')} alt='mockup' /></Fade> </div>
+                <Fade bottom>
+                    <section>
+                        <img width='100%' src={require('../images/01_walli/01_header.jpg')} alt='mockup' />
+                    </section>
+                </Fade> 
+                <Fade bottom>
+                    <section>
+                        <img width='100%' src={require('../images/01_walli/02_color.jpg')} alt='mockup' />
+                    </section>
+                </Fade> 
+                <Fade bottom>
+                    <section>
+                        <img width='100%' src={require('../images/01_walli/03_icons.jpg')} alt='mockup' />
+                    </section>
+                </Fade>
+                <Fade bottom>
+                    <section>
+                        <img width='100%' src={require('../images/01_walli/04_onboarding.jpg')} alt='mockup' />
+                    </section>
+                </Fade> 
+                <Fade bottom>
+                    <section>
+                        <img width='100%' src={require('../images/01_walli/05_main.jpg')} alt='mockup' />
+                    </section>
+                </Fade> 
+                <Fade bottom>
+                    <section>
+                        <img width='100%' src={require('../images/01_walli/07_all screens.jpg')} alt='mockup' />
+                    </section>
+                </Fade>
             </div>
         </div>
     </div>
