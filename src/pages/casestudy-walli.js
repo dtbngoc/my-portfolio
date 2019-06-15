@@ -2,13 +2,21 @@
 //import '../components/layout.scss'
 import '../components/casestudy-detail.scss'
 import React from 'react'
+
+import Img from "gatsby-image"
+import { graphql } from "gatsby"
+
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Fade from 'react-reveal/Fade'
+import Layout from '../components/layout';
 //import Slide from 'react-reveal/Slide'
 //import Zoom from 'react-reveal/Zoom'
 //import Button from '../components/Button'
 
-const WalliPage  = () => (
+
+
+const WalliPage  = ({ data }) => (
+<Layout>
     <div className='WalliPage'>
         <div id='noise-background' className='page-container'>
             <AniLink cover to='/#case01' direction='right' bg='#111421'>
@@ -20,40 +28,136 @@ const WalliPage  = () => (
                 </div>
             </AniLink>
             <div className='content-container'>
-
                 <Fade bottom>
                     <section>
-                        <img width='100%' src={require('../images/01_walli/01_header.jpg')} alt='mockup' />
+                        <Img fluid={data.imgcase01.childImageSharp.fluid} />
                     </section>
                 </Fade> 
                 <Fade bottom>
                     <section>
-                        <img width='100%' src={require('../images/01_walli/02_color.jpg')} alt='mockup' />
+                        <Img fluid={data.img02.childImageSharp.fluid} />
                     </section>
                 </Fade> 
                 <Fade bottom>
                     <section>
-                        <img width='100%' src={require('../images/01_walli/03_icons.jpg')} alt='mockup' />
-                    </section>
-                </Fade>
-                <Fade bottom>
-                    <section>
-                        <img width='100%' src={require('../images/01_walli/04_onboarding.jpg')} alt='mockup' />
+                        <Img fluid={data.img03.childImageSharp.fluid} />
                     </section>
                 </Fade> 
                 <Fade bottom>
                     <section>
-                        <img width='100%' src={require('../images/01_walli/05_main.jpg')} alt='mockup' />
+                        <Img fluid={data.img04.childImageSharp.fluid} />
                     </section>
                 </Fade> 
                 <Fade bottom>
                     <section>
-                        <img width='100%' src={require('../images/01_walli/07_all screens.jpg')} alt='mockup' />
+                        <Img fluid={data.img05.childImageSharp.fluid} />
                     </section>
-                </Fade>
+                </Fade> 
+                <Fade bottom>
+                    <section>
+                        <Img fluid={data.img06.childImageSharp.fluid} />
+                    </section>
+                </Fade> 
             </div>
+            
         </div>
     </div>
+    </Layout>
 )
 
 export default WalliPage
+
+
+export const query = graphql`
+    query {
+        img01: file(
+            relativePath: { regex: "/01_walli/01_header/" }
+        ) {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1920
+                ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+
+        img02: file(
+            relativePath: { regex: "/01_walli/02_color/" }
+        ) {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1920
+
+                ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+
+        img03: file(
+            relativePath: { regex: "/01_walli/03_icons/" }
+        ) {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1920
+
+                ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+
+        img04: file(
+            relativePath: { regex: "/01_walli/04_onboarding/" }
+        ) {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1920
+
+                ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+
+        img05: file(
+            relativePath: { regex: "/01_walli/05_main/" }
+        ) {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1920
+
+                ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+
+        img06: file(
+            relativePath: { regex: "/01_walli/06_all screens/" }
+        ) {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1920
+
+                ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+
+
+        imgcase01: file(
+            relativePath: { regex: "/walli_header/" }
+        ) {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1000
+                ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`

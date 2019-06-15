@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { findDOMNode } from 'react-dom'
-import styled from 'styled-components'
 
+import Img from "gatsby-image"
 
-const Picture = styled.img`
-    src: url(${props => props.src});
-    object-fit: contain;
-    width: 100%;
+// const Picture = styled.img`
+//     src: url(${props => props.src});
+//     object-fit: contain;
+//     width: 100%;
     
-`
+// `
 
 class TiltImage extends Component {
   constructor(props) {
@@ -131,6 +131,9 @@ class TiltImage extends Component {
     }))
     this.updateCall = null
   }
+
+
+
   render() {
     const style = {
       ...this.props.style,
@@ -156,21 +159,14 @@ class TiltImage extends Component {
             onMouseLeave={this.handleMouseLeave}
           >
             
-          <Picture src={this.props.image} />
-
+          {/* <Picture src={this.props.image} /> */}
+          <Img fluid={this.props.imagetilt} />
           </div>
         
 
       </div>
 
       
-
-
-
-
-
-
-
 
     )
   }

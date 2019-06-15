@@ -1,5 +1,6 @@
 import React from 'react'
-//import "../components/layout.scss"
+
+import { graphql } from "gatsby"
 import Layout from '../components/layout'
 
 import Nav from '../components/Nav'
@@ -10,12 +11,8 @@ import ReactFullpage from '@fullpage/react-fullpage'
 import "../components/overrides.scss"
 
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import LandingPicture from '../components/LandingPicture';
+import LandingPicture from '../components/LandingPicture'
 
-
-//import Parallax from 'react-springy-parallax'
-
-//import { Parallax } from 'react-spring/renderprops-addons'
 
 const anchors = ['home', 'case01', 'case02'];
 
@@ -30,12 +27,12 @@ class MySection extends React.Component {
   }
 }
 
-const IndexPage  = () => (
+const IndexPage  = ( {data} ) => (
   <Layout>
     <div className='header'>
       Ngoc Dang
     </div>
-
+   
     <Nav name='About' align='right'>
         <h3>
           I'm a designer based in Vietnam, <br />focused on UI/UX Design, Web Design and Development.
@@ -81,8 +78,9 @@ const IndexPage  = () => (
                     </div>
 
                    
+                    
                     <div className='tilt-image'>
-                      <TiltImage image={require('../images/walli_header.png')} />
+                      <TiltImage imagetilt={data.imgcase01.childImageSharp.fluid} />
                     </div>
                   
                     
@@ -122,9 +120,8 @@ const IndexPage  = () => (
 
                    
                     <div className='tilt-image'>
-                      <TiltImage image={require('../images/iofit_header.jpg')} />
+                    <TiltImage imagetilt={data.imgcase02.childImageSharp.fluid} />
                     </div>
-                    
                   </div>
 
                   <div className='casestudy-right'>
@@ -154,3 +151,33 @@ const IndexPage  = () => (
 
 export default IndexPage
 
+export const query = graphql`
+    query {
+        imgcase01: file(
+            relativePath: { regex: "/walli_header/" }
+        ) {
+            childImageSharp {
+                fluid(
+                    maxWidth: 1000
+                    quality: 80
+                ) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+
+
+        imgcase02: file(
+          relativePath: { regex: "/iofit_header/" }
+      ) {
+          childImageSharp {
+              fluid(
+                  maxWidth: 1000
+                  quality: 80
+              ) {
+                  ...GatsbyImageSharpFluid
+              }
+          }
+      }
+      }
+`

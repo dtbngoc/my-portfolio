@@ -36,16 +36,20 @@ $secondary-color: #6c80b6;
 
 .page-container .content-container {
     //position: relative;
+   // margin-top: 120px;
     margin-left: 16%;
     margin-right: 16%
 }
 
-.page-container .content-container img{
+.page-container .content-container section {
     padding: 10vw 0 0 0;
-    //position: absolute
 }
+// .page-container .content-container img{
+//     padding: 10vw 0 0 0;
+//     //position: absolute
+// }
 
-.page-container .content-container img:nth-child(1){
-    padding: 120px 0 0 0;
-    //position: absolute
-}
+// .page-container .content-container img:nth-child(1){
+//     padding: 120px 0 0 0;
+//     //position: absolute
+// }
