@@ -43,7 +43,7 @@ const IofitPage  = ({ data }) => (
                 
                 <Fade bottom>
                     <div className='vimeo-video'>
-                        <iframe src="https://player.vimeo.com/video/342544098?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe title='onboarding' src="https://player.vimeo.com/video/342544098?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div> 
                 </Fade>
                
@@ -54,7 +54,7 @@ const IofitPage  = ({ data }) => (
                 </Fade> 
                 <Fade bottom>
                     <div className='vimeo-video'>
-                        <iframe src="https://player.vimeo.com/video/342547531?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe title='mydiary' src="https://player.vimeo.com/video/342547531?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div> 
                 </Fade>
             </div>
