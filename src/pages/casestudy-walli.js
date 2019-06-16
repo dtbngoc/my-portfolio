@@ -19,6 +19,7 @@ const WalliPage  = ({ data }) => (
                     <span>Back</span>
                 </div>
             </AniLink>
+
             <div className='content-container'>
                 <Fade bottom>
                     <section>
@@ -79,7 +80,6 @@ export const query = graphql`
             childImageSharp {
                 fluid(
                     maxWidth: 1920
-
                 ) {
                     ...GatsbyImageSharpFluid
                 }

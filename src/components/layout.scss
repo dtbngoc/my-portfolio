@@ -120,6 +120,8 @@ h4 {
   height: 100vh
 }
 
+
+
 .intro {
   grid-column: 2;
   text-align: left;
@@ -129,6 +131,9 @@ h4 {
   grid-column: 3;
   //transform: scale(0.5)
 }
+
+
+
 
 .casestudy-container {
   background-color: white;
@@ -221,3 +226,8 @@ h4 {
 }
 
 
+@media (max-width: 1440px) {
+  .landing-picture {
+    transform: scale(0.9)
+  }
+}
