@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import Layout from '../components/layout'
 
@@ -72,9 +72,9 @@ const IndexPage  = ( {data} ) => (
                     <div className='tools'>
                       <h5>UI Design</h5>
                       
-                      <img src={require('../images/sketch.png')} alt='sketch' />
-                      <img src={require('../images/ai.png')} alt='sketch' />
-                      <img src={require('../images/ps.png')} alt='sketch' />
+                      <div className='icon-container'><Img fluid={data.sketch.childImageSharp.fluid} /></div>
+                      <div className='icon-container'><Img fluid={data.ai.childImageSharp.fluid} /></div>
+                      <div className='icon-container'><Img fluid={data.ps.childImageSharp.fluid} /></div>
                     </div>
 
                    
@@ -112,10 +112,10 @@ const IndexPage  = ( {data} ) => (
                     <div className='tools'>
                       <h5>UI/Interaction Design</h5>
                       
-                      <img src={require('../images/sketch.png')} alt='sketch' />
-                      <img src={require('../images/ai.png')} alt='sketch' />
-                      <img src={require('../images/ps.png')} alt='sketch' />
-                      <img src={require('../images/ae.png')} alt='sketch' />
+                      <div className='icon-container'><Img fluid={data.sketch.childImageSharp.fluid} /></div>
+                      <div className='icon-container'><Img fluid={data.ai.childImageSharp.fluid} /></div>
+                      <div className='icon-container'><Img fluid={data.ps.childImageSharp.fluid} /></div>
+                      <div className='icon-container'><Img fluid={data.ae.childImageSharp.fluid} /></div>
                     </div>
 
                    
@@ -153,13 +153,62 @@ export default IndexPage
 
 export const query = graphql`
     query {
+      ai: file(
+        relativePath: { regex: "/ai/" }
+      ) {
+          childImageSharp {
+              fluid(
+                  maxWidth: 30
+                  
+              ) {
+                  ...GatsbyImageSharpFluid
+              }
+          }
+      }
+
+      ae: file(
+        relativePath: { regex: "/ae/" }
+      ) {
+          childImageSharp {
+              fluid(
+                  maxWidth: 36
+              ) {
+                  ...GatsbyImageSharpFluid
+              }
+          }
+      }
+
+      ps: file(
+        relativePath: { regex: "/ps/" }
+      ) {
+          childImageSharp {
+              fluid(
+                  maxWidth: 36
+              ) {
+                  ...GatsbyImageSharpFluid
+              }
+          }
+      }
+
+      sketch: file(
+        relativePath: { regex: "/sketch/" }
+      ) {
+          childImageSharp {
+              fluid(
+                  maxWidth: 36
+              ) {
+                  ...GatsbyImageSharpFluid
+              }
+          }
+      }
+
+
         imgcase01: file(
             relativePath: { regex: "/walli_header/" }
         ) {
             childImageSharp {
                 fluid(
                     maxWidth: 1000
-                    quality: 80
                 ) {
                     ...GatsbyImageSharpFluid
                 }
@@ -173,7 +222,6 @@ export const query = graphql`
           childImageSharp {
               fluid(
                   maxWidth: 1000
-                  quality: 80
               ) {
                   ...GatsbyImageSharpFluid
               }

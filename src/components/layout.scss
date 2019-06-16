@@ -59,7 +59,7 @@ h1{
   color: $background-color;
   line-height: normal;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 100px
 }
 
 h2{
@@ -67,7 +67,7 @@ h2{
   color: $text-color;
   line-height: normal;
   font-weight: bold;
-  font-size: 80px;
+  font-size: 80px
 }
 
 h3 {
@@ -82,7 +82,7 @@ h3 {
   font-weight: normal;
   line-height: 72px;
   font-size: 48px;
-  color: $background-color;
+  color: $background-color
 }
 
 h4 {
@@ -90,12 +90,11 @@ h4 {
   color: $background-color;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 40px
 }
 
 #noise-background {
   position: relative;
-  //height: 100vh;
 
   &::before {
       content: "";
@@ -148,7 +147,8 @@ h4 {
 .casestudy-left {
   display: grid;
   grid-gap: 3vw;
-  grid-template-columns: 7vw 1fr 6fr;
+  grid-template-columns: 10vw 36px auto;
+  align-items:  center
 }
 
 .casestudy-left .tilt-image {
@@ -161,24 +161,15 @@ h4 {
 
 .casestudy-left .tools {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: column
 }
 
-.walli .casestudy-left .tools {
-  justify-content: center;
+.casestudy-container .tools .icon-container {
+  margin: 12px 0
 }
 
-.casestudy-left .tools > img {
-  margin: 12px 0;
-  width: 36px;
-}
-// .iofit .tools > img:nth-child(5) {
-//   margin: 8px 32px 8px;
-// }
 .casestudy-left .tools > h5 {
-  margin: 38px 0px;
+  margin: 44px 5px;
   font-family: 'Overpass Mono', sans-serif;
   font-size: 18px;
   font-weight: 500;

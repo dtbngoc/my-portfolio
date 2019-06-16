@@ -1,5 +1,3 @@
-//import Layout from '../components/layout'
-//import '../components/layout.scss'
 import '../components/casestudy-detail.scss'
 import React from 'react'
 
@@ -8,15 +6,9 @@ import { graphql } from "gatsby"
 
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Fade from 'react-reveal/Fade'
-import Layout from '../components/layout';
-//import Slide from 'react-reveal/Slide'
-//import Zoom from 'react-reveal/Zoom'
-//import Button from '../components/Button'
-
 
 
 const WalliPage  = ({ data }) => (
-<Layout>
     <div className='WalliPage'>
         <div id='noise-background' className='page-container'>
             <AniLink cover to='/#case01' direction='right' bg='#111421'>
@@ -30,7 +22,7 @@ const WalliPage  = ({ data }) => (
             <div className='content-container'>
                 <Fade bottom>
                     <section>
-                        <Img fluid={data.imgcase01.childImageSharp.fluid} />
+                        <Img fluid={data.img01.childImageSharp.fluid} />
                     </section>
                 </Fade> 
                 <Fade bottom>
@@ -62,7 +54,6 @@ const WalliPage  = ({ data }) => (
             
         </div>
     </div>
-    </Layout>
 )
 
 export default WalliPage
