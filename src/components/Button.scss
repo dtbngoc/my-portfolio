@@ -21,15 +21,9 @@ $text-color: #ECEDFB;
     justify-content: center;
     width: 200px;
     height: 56px;
-    //padding: 28px 32px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: $text-color;
+    border: 1px solid $text-color
 }
 
-.walli .button-container {
-    border-color: #B2B9FF;
-}
 .button-container .link-container {
     width: 100px;
 }
@@ -46,17 +40,13 @@ $text-color: #ECEDFB;
     height:22px;
     letter-spacing: .5px;
 }
-.fp-viewing-home #on-black.Link {
-    transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1.0);
-}
+
 .fp-viewing-case01 #on-black.Link {
-    color: white;
-    transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+    color: white
 }
 
 .fp-viewing-case02 #on-black.Link {
-    color: $background-color;
-    transition: 0.1s cubic-bezier(0.2, 0.8, 0.2, 1.0);
+    color: $background-color
 }
 
 #on-white.Link{
@@ -67,25 +57,25 @@ $text-color: #ECEDFB;
     font-weight: 700;
     line-height:22px;
     height:22px;
-    letter-spacing: .5px;
-    
+    letter-spacing: .5px
 }
+
 .Link span{
     position: relative;
     display: inline-block;
     transform: translateY(100%);
-    transition: all 0.25s cubic-bezier(0.8, 0.2, 0.8, 1) 0s;
+    transition: all 0.25s cubic-bezier(0.8, 0.2, 0.8, 1) 0s
 }
 
 .link-container .Link span{
-    transform: translateY(0%);
+    transform: translateY(0%)
 }
 .button-container .Link span{
-    transform: translateY(0%);
+    transform: translateY(0%)
 }
 .Link span{
     position:relative;
-   z-index:5;
+    z-index:5
 }
 
 $num: 1;
@@ -98,12 +88,9 @@ $num: 1;
     $num: $num + 1;
 }
 
-
-
-
 .link-container:hover .Link span{
-    transform: translateY(-100%);
+    transform: translateY(-100%)
 }
 .button-container:hover .Link span{
-    transform: translateY(-100%);
+    transform: translateY(-100%)
 }

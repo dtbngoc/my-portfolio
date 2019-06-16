@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from "react"
 import Button from './Button'
 import Menu from './Menu'
 
 
-class Nav extends React.Component {
+class Nav extends Component {
     constructor(props, context) {
         super(props, context);
        
@@ -44,16 +44,13 @@ class Nav extends React.Component {
 
            </div>
 
-           <Menu handleMouseDown={this.handleMouseDown}
-          menuVisibility={this.state.visible} align={this.props.align}>
-          {this.props.children}
-          </Menu>
+            <Menu handleMouseDown={this.handleMouseDown}
+            menuVisibility={this.state.visible} align={this.props.align}>
+            {this.props.children}
+            </Menu>
 
           </div>
            
-           
-
-            
          
         );
       }

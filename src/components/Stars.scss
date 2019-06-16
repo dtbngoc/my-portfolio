@@ -6,12 +6,13 @@
   15% {
     opacity: 0.5;
   }
-  68% {
+  58% {
     transform: scale(0.8);
     opacity: 0.3;
   }
   74% {
-    opacity: 1;
+    transform: scale(1.6);
+    opacity: 0.9;
   }
   78% {
     transform: scale(0.4);
@@ -19,7 +20,7 @@
   }
 }
 
-$star-count : 500;
+$star-count : 300;
 
 .star{
   position: absolute;
@@ -56,19 +57,3 @@ $star-count : 500;
 		transform : translate(450px,75px) rotate(-75deg);
 	}
 }
-
-// .shooting-star {
-// 	position: absolute;
-// 	width: 1px;
-//   height: 60px;
-//   transform: scale(0.5);
-//   visibility: hidden;
-  
-//   box-shadow: 0 0 10px 2px rgba(68, 0, 255, 0.5);
-// 	top: 0px;
-// 	left: 0px;
-	
-// 	border-radius: 35%;
-// 	background-image: linear-gradient(#111421 10%, white 100%);
-// 	animation: meteor 3s infinite;
-// }

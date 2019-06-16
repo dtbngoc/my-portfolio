@@ -2,12 +2,12 @@ $background-color: #111421;
 $text-color: #ECEDFB;
 $secondary-color: #6c80b6;
 
-@import "gram-img";
-@import "casestudy-detail";
-@import "Button";
-@import "LandingPicture";
-@import "Menu";
-@import "Stars";
+@import 'gram-img';
+@import 'casestudy-detail';
+@import 'Button';
+@import 'overrides';
+@import 'Menu';
+@import 'Stars';
 
 .header {
   position: fixed;
@@ -15,7 +15,7 @@ $secondary-color: #6c80b6;
   top: 8%;
   left: 10%;
 
-  font-family: "Overpass Mono";
+  font-family: 'Overpass Mono';
   font-size: 16px;
   font-weight: 700;
   color: $text-color
@@ -127,32 +127,87 @@ h4 {
   text-align: left;
 }
 
+/* --------------------------------------------------------------------------- landing picture */
+
 .landing-picture {
-  grid-column: 3;
-  //transform: scale(0.5)
+  grid-column: 3
+}
+
+.gramophone-container {
+  position: relative;
+  width: 480px;
+  height: 730px
+}
+
+.gramophone-container > svg {
+  position: absolute;
+  width: 480px;
+  height: 716px
+}
+
+.gramophone-container .star-container-top {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 400px;
+  width: 300px;
+  clip-path: url(#clip0);
+}
+
+.gramophone-container .star-container-bottom {
+  position: absolute;
+  top: 405px;
+  left: 105px;
+  height: 124px;
+  width: 286px;
+  clip-path: ellipse()
+}
+
+.gramophone-container #gramophone-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 480px;
+  height: 730px;
+  background-size: cover
+}
+
+.gramophone-container #shadow {
+  position: absolute;
+  top: 550px;
+  left: 20px;
+  width: 480px;
+  height: 285px;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.gramophone-container .PlanetsGroup {
+  position: absolute;
+  transform: scale(0.38);
+  top: 467px;
+  left: 249px
 }
 
 
-
-
+/* --------------------------------------------------------------------------- case study */
 .casestudy-container {
   background-color: white;
   display: grid;
-  grid-gap: 6vw;
+  grid-gap: 5vw;
   grid-template-columns: 6fr 5fr;
   align-items: center;
   height: 100vh
 }
 
 .walli .casestudy-container {
-  background-color: #7685FF;
+  background-color: #7685FF
 }
-
 
 .casestudy-left {
   display: grid;
   grid-gap: 3vw;
-  grid-template-columns: 10vw 36px auto;
+  grid-template-columns: 10vw 2vw auto;
   align-items:  center
 }
 
@@ -170,11 +225,11 @@ h4 {
 }
 
 .casestudy-container .tools .icon-container {
-  margin: 12px 0
+  margin: 0.7vw 0
 }
 
 .casestudy-left .tools > h5 {
-  margin: 44px 5px;
+  margin: 2vw 0.3vw;
   font-family: 'Overpass Mono', sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -225,6 +280,7 @@ h4 {
   color: rgba(white, .8)
 }
 
+/* --------------------------------------------------------------------------- responsive */
 
 @media (max-width: 1440px) {
   .landing-picture {

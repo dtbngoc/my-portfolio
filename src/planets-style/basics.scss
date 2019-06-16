@@ -3,42 +3,33 @@
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  
+  transform: rotateX(65deg) 
 }
 
 .orbit {
-  //box-shadow: 0 0 100px rgba(209, 212, 255, 0.1);
   position: absolute;
   top: 50%;
   left: 50%;
   border: 1px solid #596a99;
   border-radius: 50%;
-  //transform: translate3D(-1px, -1px, 0);
   transform-style: preserve-3d;
   animation-name: orbit;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear
 }
 
-.orbit .orbit{ animation-name: suborbit; }
+.orbit .orbit{ animation-name: suborbit }
 
 .pos {
   position: absolute;
   top: 50%;
-
-
-  //width: 8px;
-  //height: 8px;
-
-  //margin-top: -4px;
-  //margin-left: -4px;
   transform-style: preserve-3d;
   animation-name: invert;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: linear
 }
 
-#sun, .planet, #earth .moon {
+.sun, .planet, #earth .moon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,13 +39,14 @@
   margin-left: -80px;
 
   border-radius: 50%;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d
 }
 
-#sun {
+.sun {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 0 48px rgba(209, 212, 255, 0.8);
+  transform: rotateX(-50deg)
 }
 
 
@@ -64,8 +56,37 @@
   background-size: cover;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  box-shadow: 0 0 32px rgba(209, 212, 255, 0.8);
-  
+  box-shadow: 0 0 32px rgba(209, 212, 255, 0.8)
 }
+
+
+/* --------------------------------------------------------------------------- planets index */
+
+#mercury { z-index: 8; }
+#venus   { z-index: 7; }
+#earth   { z-index: 6; }
+#moon    { z-index: 5; }
+#mars    { z-index: 4; }
+#jupiter { z-index: 3; }
+#saturn  { z-index: 2; }
+#sun     { z-index: 1; }
+
+/* --------------------------------------------------------------------------- animations */
+
+@keyframes orbit {
+  0%    { transform: rotateZ(0deg) }
+  100%  { transform: rotateZ(-360deg) }
+}
+
+@keyframes suborbit {
+  0%    { transform: rotateX(90deg) rotateZ(0deg) }
+  100%  { transform: rotateX(90deg) rotateZ(-360deg) }
+}
+
+@keyframes invert {
+  0%   { transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg) }
+  100% { transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg) }
+}
+
 
 

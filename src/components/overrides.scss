@@ -68,6 +68,7 @@ $secondary-color: #6c80b6;
 .fp-viewing-home #fp-nav.fp-right,
 .fp-viewing-case01 #fp-nav.fp-right,
 .fp-viewing-case02 #fp-nav.fp-right {
+  z-index: 1;
   right: 8.3%
 }
 
