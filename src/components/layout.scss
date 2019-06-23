@@ -42,7 +42,32 @@ $secondary-color: #6c80b6;
   transform: rotate(90deg)
 }
 
+.about-me {
 
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 10vw auto 10vw;
+  grid-gap: 3vw;
+  align-items: center;
+}
+.about-right {
+  grid-column: 2
+}
+.about-right > h4 {
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.about-right > h5 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.about-right > p,a {
+  color: rgba($background-color, .6);
+}
 
 body {
   font-family: 'Overpass Mono', sans-serif;
@@ -70,20 +95,20 @@ h2{
   font-size: 80px
 }
 
-h3 {
-  position: absolute;
-  width: 60%;
-  top: 20%;
-  left: 20%;
-  z-index: 500;
+// h3 {
+//   position: absolute;
+//   width: 60%;
+//   top: 20%;
+//   left: 20%;
+//   z-index: 500;
 
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 72px;
-  font-size: 48px;
-  color: $background-color
-}
+//   font-family: 'Playfair Display';
+//   font-style: normal;
+//   font-weight: normal;
+//   line-height: 72px;
+//   font-size: 48px;
+//   color: $background-color
+// }
 
 h4 {
   font-family: 'Playfair Display';
@@ -91,6 +116,14 @@ h4 {
   font-style: normal;
   font-weight: normal;
   font-size: 40px
+}
+
+h5 {
+  font-family: 'Playfair Display';
+  color: $background-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px
 }
 
 #noise-background {

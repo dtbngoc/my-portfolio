@@ -35,9 +35,21 @@ const IndexPage  = ( {data} ) => (
     </div>
    
     <Nav name='About' align='right'>
-        <h3>
-          I'm a designer based in Vietnam, <br />focused on UI/UX Design, Web Design and Development.
-        </h3>
+      <div className='about-me'>
+        {/* <div className='about-left'>
+          <Img fluid={data.ava1.childImageSharp.fluid} />
+        </div> */}
+        <div className='about-right'>
+          <h4>Hello,</h4>
+          <h5>it is nice to meet you</h5>
+          <p>I'm Ngoc Dang, a visual and UI/UX designer <br />based in Vietnam</p>
+          <a href="https://dribbble.com/ngocdangtb" target="_blank" rel="noopener noreferrer">dribble</a>
+          &nbsp
+          <a href="https://www.behance.net/dangtbngoc9dd3" target="_blank" rel="noopener noreferrer">behance</a>
+          &nbsp
+          <a href="mailto:dangtb.ngoc@gmail.com?Subject=Hello" target="_top">e-mail</a>
+        </div>
+      </div>
     </Nav>
   
 
@@ -246,5 +258,21 @@ export const query = graphql`
               }
           }
       }
-      }
+
+
+      ava1: file(
+        relativePath: { regex: "/ava1/" }
+    ) {
+        childImageSharp {
+            fluid(
+                maxWidth: 256
+            ) {
+                ...GatsbyImageSharpFluid
+            }
+        }
+    }
+
+
+
+  }
 `
