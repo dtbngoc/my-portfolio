@@ -36,18 +36,19 @@ const IndexPage  = ( {data} ) => (
    
     <Nav name='About' align='right'>
       <div className='about-me'>
-        {/* <div className='about-left'>
-          <Img fluid={data.ava1.childImageSharp.fluid} />
-        </div> */}
         <div className='about-right'>
           <h4>Hello,</h4>
           <h5>it is nice to meet you</h5>
-          <p>I'm Ngoc Dang, a visual and UI/UX designer <br />based in Vietnam</p>
+          <p>I'm Ngoc Dang, a visual and UI/UX designer based in Vietnam.</p>
+          <p>I'm a problem solver</p>
           <a href="https://dribbble.com/ngocdangtb" target="_blank" rel="noopener noreferrer">dribble</a>
           &nbsp
-          <a href="https://www.behance.net/dangtbngoc9dd3" target="_blank" rel="noopener noreferrer">behance</a>
+          {/* <a href="https://www.behance.net/dangtbngoc9dd3" target="_blank" rel="noopener noreferrer">behance</a>
+          &nbsp */}
+          <a href="https://github.com/dtbngoc" target="_blank" rel="noopener noreferrer">github</a>
           &nbsp
           <a href="mailto:dangtb.ngoc@gmail.com?Subject=Hello" target="_top">e-mail</a>
+          
         </div>
       </div>
     </Nav>
