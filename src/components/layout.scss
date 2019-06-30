@@ -361,7 +361,7 @@ h5 {
   }
   .intro {
     position: absolute;
-    bottom: 8%;
+    bottom: 10%;
     z-index: 100;
   }
   .intro > p {
@@ -375,10 +375,10 @@ h5 {
 
   .landing-picture {
     position: absolute;
-    top: -40px;
+    top: -8%;
     left: -100px;
     grid-column: 2;
-    transform: scale(0.6)
+    transform: scale(0.55)
   }
   
 
@@ -398,5 +398,45 @@ h5 {
   }
   .about-right > p{
     max-width: 560px;
+  }
+
+
+ /*----------------------------Case study */ 
+  .casestudy-container {
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 10vw 1fr 10vw;
+    align-items: center;
+    height: 100vh
+  }
+
+  .walli .casestudy-container {
+    background-color: #7685FF
+  }
+
+  .casestudy-left {
+    display: none;
+  }
+
+  .casestudy-right {
+    grid-column: 2;
+  }
+
+  .casestudy-right h1 {
+    font-size: 64px
+  }
+
+  .casestudy-right h4 {
+    font-size: 32px
+  }
+  .casestudy-right hr {
+    width: 80px
+  }
+
+  .casestudy-right > p {
+    max-width: 80%;
+    margin: 20px 0px 60px 0px;
+    font-size: 15px;
+    font-weight: 300
   }
 }
