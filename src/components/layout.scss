@@ -24,7 +24,8 @@ $secondary-color: #6c80b6;
 .fp-viewing-home .header {
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0)
 }
-.fp-viewing-case01 .header {
+.fp-viewing-case01 .header,
+.fp-viewing-case03 .header {
   color: white;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0)
 }
@@ -60,7 +61,7 @@ $secondary-color: #6c80b6;
 }
 .about-right > h5 {
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 0;
 }
 .about-right > p,a {
@@ -95,21 +96,6 @@ h2{
   font-weight: bold;
   font-size: 80px
 }
-
-// h3 {
-//   position: absolute;
-//   width: 60%;
-//   top: 20%;
-//   left: 20%;
-//   z-index: 500;
-
-//   font-family: 'Playfair Display';
-//   font-style: normal;
-//   font-weight: normal;
-//   line-height: 72px;
-//   font-size: 48px;
-//   color: $background-color
-// }
 
 h4 {
   font-family: 'Playfair Display';
@@ -237,6 +223,9 @@ h5 {
 .walli .casestudy-container {
   background-color: #7685FF
 }
+.theguide .casestudy-container {
+  background-color: #66a5ad
+}
 
 .casestudy-left {
   display: grid;
@@ -275,7 +264,8 @@ h5 {
   transform: rotate(180deg)
 }
 
-.walli .casestudy-left .tools > h5 {
+.walli .casestudy-left .tools > h5,
+.theguide .casestudy-left .tools > h5 {
   color: white;
 }
 
@@ -289,7 +279,8 @@ h5 {
   display: inline-block;
   margin: 10px 10px 10px 0px
 }
-.walli .casestudy-right hr {
+.walli .casestudy-right hr,
+.theguide .casestudy-right hr {
   border-color: white
 }
 
@@ -298,7 +289,9 @@ h5 {
   margin: 20px 0px
 }
 .walli .casestudy-right h1, 
-.walli .casestudy-right h4 {
+.walli .casestudy-right h4,
+.theguide .casestudy-right h1, 
+.theguide .casestudy-right h4 {
   color: white
 }
 
@@ -310,7 +303,8 @@ h5 {
   font-weight: 300;
   color: rgba($background-color, .5)
 }
-.walli .casestudy-right > p{
+.walli .casestudy-right > p,
+.theguide .casestudy-right > p {
   color: rgba(white, .8)
 }
 
@@ -353,7 +347,7 @@ h5 {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
 
   h2{
     font-size: 44px;
@@ -366,7 +360,7 @@ h5 {
   }
   .intro > p {
     font-size: 15px;
-    max-width: 325px;
+    max-width: 325px
   }
   .landing {
     grid-gap: 0;
@@ -376,9 +370,9 @@ h5 {
   .landing-picture {
     position: absolute;
     top: -8%;
-    left: -100px;
+    left: -10%;
     grid-column: 2;
-    transform: scale(0.55)
+    transform: scale(0.7)
   }
   
 
@@ -438,5 +432,29 @@ h5 {
     margin: 20px 0px 60px 0px;
     font-size: 15px;
     font-weight: 300
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .landing-picture {
+    position: absolute;
+    top: -8%;
+    left: -14%;
+    grid-column: 2;
+    transform: scale(0.6)
+  }
+}
+
+
+@media (max-width: 375px) {
+
+  .landing-picture {
+    position: absolute;
+    top: -8%;
+    left: -25%;
+    grid-column: 2;
+    transform: scale(0.55)
   }
 }

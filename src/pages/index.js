@@ -15,7 +15,7 @@ import Stars from '../components/Stars'
 import Planets from '../components/Planets'
 
 
-const anchors = ['home', 'case01', 'case02'];
+const anchors = ['home', 'case01', 'case02', 'case03'];
 
 
 class MySection extends React.Component {
@@ -39,12 +39,13 @@ const IndexPage  = ( {data} ) => (
         <div className='about-right'>
           <h4>Hello,</h4>
           <h5>it is nice to meet you</h5>
-          <p>I'm Ngoc Dang, a visual and UI/UX designer based in Vietnam.</p>
-          <p>I'm a problem solver</p>
+          <p>I'm Ngoc Dang, a visual and UI/UX designer based in Vietnam. I also cover a little bit of coding.</p>
+          <p>I'm a problem solver. I enjoy learning new stuff and working on interesting ideas.</p>
+          <p>See more high quality designs and check me out at belows:</p>
           <a href="https://dribbble.com/ngocdangtb" target="_blank" rel="noopener noreferrer">dribble</a>
           &nbsp
-          {/* <a href="https://www.behance.net/dangtbngoc9dd3" target="_blank" rel="noopener noreferrer">behance</a>
-          &nbsp */}
+          <a href="https://www.behance.net/dangtbngoc9dd3" target="_blank" rel="noopener noreferrer">behance</a>
+          &nbsp
           <a href="https://github.com/dtbngoc" target="_blank" rel="noopener noreferrer">github</a>
           &nbsp
           <a href="mailto:dangtb.ngoc@gmail.com?Subject=Hello" target="_top">e-mail</a>
@@ -175,6 +176,43 @@ const IndexPage  = ( {data} ) => (
                 </div>
               </section>
             </MySection>
+          
+            <MySection>
+              <section id='noise-background' className='theguide'> 
+                <div className='casestudy-container'>
+                  <div className='casestudy-left'>
+                    <div className='tools'>
+                      <h5>Web UI/Interaction Design</h5>
+                      
+                      <div className='icon-container'><Img fluid={data.sketch.childImageSharp.fluid} /></div>
+                      <div className='icon-container'><Img fluid={data.ps.childImageSharp.fluid} /></div>
+                      <div className='icon-container'><Img fluid={data.ae.childImageSharp.fluid} /></div>
+                    </div>
+
+                   
+                    <div className='tilt-image'>
+                    <TiltImage imagetilt={data.imgcase03.childImageSharp.fluid} />
+                    </div>
+                  </div>
+
+                  <div className='casestudy-right'>
+                    <h4><hr/> 03</h4>
+                    <h1>theguide</h1>
+                    <p>
+                    A website made for those who wish to visit Vietnam, aiming to guide the visitors through some of the land's magicals and secrets.
+                    </p>
+                    <AniLink cover to='/casestudy-theguide' direction='left' bg='#ECEDFB'>
+                      <div className='button-container'>
+                      <div className='link-container'>
+                          <Button text=' View case' id='on-black' />
+                          <Button text=' View case' id='on-black'/>
+                        </div>
+                      </div>
+                    </AniLink>
+                  </div>
+                </div>
+              </section>
+            </MySection>
           </ReactFullpage.Wrapper>
         );
       }}
@@ -260,13 +298,12 @@ export const query = graphql`
           }
       }
 
-
-      ava1: file(
-        relativePath: { regex: "/ava1/" }
+      imgcase03: file(
+        relativePath: { regex: "/theguide_header/" }
     ) {
         childImageSharp {
             fluid(
-                maxWidth: 256
+                maxWidth: 1000
             ) {
                 ...GatsbyImageSharpFluid
             }

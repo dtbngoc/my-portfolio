@@ -7,10 +7,10 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Fade from 'react-reveal/Fade'
 
 
-const IofitPage  = ({ data }) => (
-    <div className='IofitPage'>
+const TheguidePage  = ({ data }) => (
+    <div className='TheguidePage'>
         <div id='noise-background' className='page-container'>
-            <AniLink cover to='/#case02' direction='right' bg='#111421'>
+            <AniLink cover to='/#case03' direction='right' bg='#111421'>
                 <div className='back-button'>
                     <svg width="30" height="11" viewBox="0 0 30 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.1992 9.69629H1.64449L9.64423 1.69629" />
@@ -37,50 +37,37 @@ const IofitPage  = ({ data }) => (
                 </Fade> 
                 <Fade bottom>
                     <section>
-                        <Img fluid={data.img0401.childImageSharp.fluid} />
+                        <Img fluid={data.img04.childImageSharp.fluid} />
                     </section>
                 </Fade> 
-                
-                <Fade bottom>
-                    <div className='vimeo-video'>
-                        <iframe title='onboarding' src="https://player.vimeo.com/video/342544098?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div> 
-                </Fade>
-               
                 <Fade bottom>
                     <section>
-                        <img width='100%' src={require('../images/02_iofit/05_01_menubar.gif')} alt='gif'/>
+                        <Img fluid={data.img05.childImageSharp.fluid} />
                     </section>
                 </Fade> 
                 <Fade bottom>
                     <div className='vimeo-video'>
-                        <iframe title='mydiary' src="https://player.vimeo.com/video/342547531?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe title='onboarding' src="https://player.vimeo.com/video/345323714?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div> 
                 </Fade>
                 <Fade bottom>
                     <div className='vimeo-video'>
-                        <iframe title='mydiary' src="https://player.vimeo.com/video/345290945?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe title='onboarding' src="https://player.vimeo.com/video/345323697?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div> 
                 </Fade>
-
-                <Fade bottom>
-                    <section>
-                        <img width='100%' src={require('../images/02_iofit/05_03_all.jpg')} alt='gif'/>
-                    </section>
-                </Fade> 
             </div>
             
         </div>
     </div>
 )
 
-export default IofitPage
+export default TheguidePage
 
 
 export const query = graphql`
     query {
         img01: file(
-            relativePath: { regex: "/02_iofit/01_header/" }
+            relativePath: { regex: "/03_theguide/01/" }
         ) {
             childImageSharp {
                 fluid(
@@ -92,7 +79,7 @@ export const query = graphql`
         }
 
         img02: file(
-            relativePath: { regex: "/02_iofit/02_sitemap/" }
+            relativePath: { regex: "/03_theguide/02/" }
         ) {
             childImageSharp {
                 fluid(
@@ -104,7 +91,7 @@ export const query = graphql`
         }
 
         img03: file(
-            relativePath: { regex: "/02_iofit/03_color/" }
+            relativePath: { regex: "/03_theguide/03/" }
         ) {
             childImageSharp {
                 fluid(
@@ -115,8 +102,8 @@ export const query = graphql`
             }
         }
 
-        img0401: file(
-            relativePath: { regex: "/02_iofit/04_01_onboarding/" }
+        img04: file(
+            relativePath: { regex: "/03_theguide/04/" }
         ) {
             childImageSharp {
                 fluid(
@@ -127,8 +114,8 @@ export const query = graphql`
             }
         }
 
-        img0503: file(
-            relativePath: { regex: "/02_iofit/05_03_all/" }
+        img05: file(
+            relativePath: { regex: "/03_theguide/05/" }
         ) {
             childImageSharp {
                 fluid(
@@ -138,6 +125,7 @@ export const query = graphql`
                 }
             }
         }
-
     }
 `
+
+
