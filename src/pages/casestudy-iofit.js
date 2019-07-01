@@ -68,6 +68,11 @@ const IofitPage  = ({ data }) => (
                         <img width='100%' src={require('../images/02_iofit/05_03_all.jpg')} alt='gif'/>
                     </section>
                 </Fade> 
+                <Fade bottom>
+                    <section>
+                        <img width='100%' src={require('../images/02_iofit/06_training.jpg')} alt='gif'/>
+                    </section>
+                </Fade> 
             </div>
             
         </div>
@@ -138,6 +143,8 @@ export const query = graphql`
                 }
             }
         }
+
+
 
     }
 `
