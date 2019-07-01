@@ -65,12 +65,12 @@ const IofitPage  = ({ data }) => (
 
                 <Fade bottom>
                     <section>
-                        <img width='100%' src={require('../images/02_iofit/05_03_all.jpg')} alt='gif'/>
+                        <img width='100%' src={require('../images/02_iofit/05_03_all.jpg')} alt='components'/>
                     </section>
                 </Fade> 
                 <Fade bottom>
                     <section>
-                        <img width='100%' src={require('../images/02_iofit/06_training.jpg')} alt='gif'/>
+                        <img width='100%' src={require('../images/02_iofit/06_training.jpg')} alt='training'/>
                     </section>
                 </Fade> 
             </div>
