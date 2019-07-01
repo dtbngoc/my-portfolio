@@ -47,12 +47,12 @@ const TheguidePage  = ({ data }) => (
                 </Fade> 
                 <Fade bottom>
                     <div className='vimeo-video'>
-                        <iframe title='onboarding' src="https://player.vimeo.com/video/345323714?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe title='homepage' src="https://player.vimeo.com/video/345323714?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div> 
                 </Fade>
                 <Fade bottom>
                     <div className='vimeo-video'>
-                        <iframe title='onboarding' src="https://player.vimeo.com/video/345323697?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe title='seeplaces' src="https://player.vimeo.com/video/345371703?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div> 
                 </Fade>
             </div>

@@ -59,7 +59,7 @@ const IofitPage  = ({ data }) => (
                 </Fade>
                 <Fade bottom>
                     <div className='vimeo-video'>
-                        <iframe title='mydiary' src="https://player.vimeo.com/video/345290945?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe title='lunch' src="https://player.vimeo.com/video/345290945?autoplay=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div> 
                 </Fade>
 
